@@ -11,7 +11,7 @@ function CambiarColor(){
     ELementosHTML.push(" .body2 ")(0);
     ELementosHTML.push(" .slider-mas2 ")(1);
     ELementosHTML.push(" .infov2")(2);
-    ELementosHTML.push("  .estudiosv2")(3);
+    ELementosHTML.push(" .estudiosv2")(3);
     ELementosHTML.push("   ")
 }
 

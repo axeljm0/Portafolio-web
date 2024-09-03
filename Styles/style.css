@@ -72,7 +72,6 @@ html{
    margin-bottom: 0%;
 }
 
-
 #caja1{
     padding: 100px;
     background: linear-gradient(rgba(5, 7, 12, 0.75),
@@ -179,13 +178,7 @@ position: static;
     margin: 0%;
     align-content:end;
 }
-
-#cool-info{
-    font-size: 100px;
-    align-items: center;
-    margin-top: 10%;
-}
-
+    
  #info{
     margin-top: 5%;
     padding-bottom: 5%;
@@ -194,17 +187,16 @@ position: static;
     margin-left: 5%;
     height: 35%;
     background-color: #201f1f;
-    
+    }
 
-}
 
-#info a{
+/*  #info a{
     margin-left: 5%;
     font-size: 30px;
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-family:Verdana,Tahoma, sans-serif;
-}
+} */
 
 #info-2{
     justify-content: center;
@@ -219,12 +211,12 @@ position: static;
     margin-left: 5%;
 }
 
-.info-title{
+#info h1{
   color: #823b3b;
   font-size: 50px;
   font-weight: bold;
   font-family:Verdana,Tahoma,sans-serif;
-  margin-top: 3%;
+  margin-top: 1%;
   margin-left:5%;
 }
 
@@ -672,11 +664,10 @@ transition: all 0.2s;
 .estudios{
     padding-top: 0.7%;
     max-width: 70%;
-    margin-left: 3%;
-    margin-right: 20%;
     background-color: #201f1f;
     border-radius: 10px;
     border: solid black;
+    margin-left: 5%;
 }
 
 .estudios img{
@@ -685,30 +676,47 @@ transition: all 0.2s;
     padding: 0%;
 }
 
-#formacion-letter h1 {
-  transform: translate(35%,-280%);
-  margin-top: 0%;
-  font-weight: bold;
-  font-size: 250%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: #fff;
+#formacion3{
+    width: 20%;
+    margin-left: 3%;
+    padding: 0%;
+    transform: translate( 0%, 90%);
+ 
 }
 
-#formacion-letter p{
-  font-size: 185%;
-  transform: translate(35%,-80%);
+#formacion3-letter{
+    margin-left: 35%;
+    margin-bottom: 10%;
+    padding: 0%;
 
 }
 
-.year-course1{
-    color: #fff;
-}
-
-#formacion2-letter h1{
+#formacion3-letter h1{
     font-weight: bold;
     font-size: 250%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #fff;
+
+}
+
+#formacion3-letter p{
+    font-size: 185%;
+    color: #fff;
+}
+
+
+#formacion2-letter h1{
+    display: flex;
+    overflow: hidden;
+    align-items: flex-start;  
+    transform: translate(34%,-280%);
+    margin-top: 0%;
+    align-items: center;
+    padding: 1%;
+    font-weight: bold;
+    font-size: 250%;
+    color: #fff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
@@ -722,9 +730,25 @@ transition: all 0.2s;
     width: 20%;
     padding: 0%;
     margin-top: 10%;
-    margin-left: 1%;
+    margin-left: 3%;
 }
 
+#formacion-letter h1 {
+    color: #ffffff;
+    transform: translate(35%,-280%);
+    margin-top: 0%;
+    align-items: center;
+    padding: 0%;
+    font-weight: bold;
+    font-size: 250%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+#formacion-letter p{
+  font-size: 185%;
+  color: #fff;
+  margin-top:5%;
+}
 
 #formacion2{
    width: 25%;
@@ -738,7 +762,8 @@ transition: all 0.2s;
  margin-top: 12%;       
  width: 100%;
  padding-left: 0%;
- 
+ z-index: -1;
+ transform: translate( 0%, -150%);
 }
 
 #pie-pagina{
@@ -750,6 +775,7 @@ transition: all 0.2s;
   align-content: center;
   float: baseline;
   flex-direction: column;
+  margin: 0%;
   
 }
 
@@ -792,9 +818,7 @@ transition: all 0.2s;
 .formacion3-caja{
   margin-bottom: 0%;
 
-
 }
-
 
 #formacion3{
     width: 20%;
@@ -819,11 +843,11 @@ transition: all 0.2s;
 
 }
 
-
 #formacion3-letter p{
     font-size: 185%;
     color: #fff;
 }
+
 
 /* 1844px - 2396px */
 @media (min-width: 1844px) and (max-width: 2396px){
@@ -973,15 +997,25 @@ transition: all 0.2s;
         
     }
 
-    #formacion-letter{
+    #formacion-letter p{
         margin-left: 15%;
         width: 100%;    
+        margin-top: 30%;
 
     }
+
+        #formacion-letter h1{
+        margin-left: 15%;
+        width: 100%;    
+        margin-top: 5%;
+
+    }
+
 
     #formacionONE{
         width: 40%;
         margin-left: 3%;
+        
     }
 
     .year-course1{
@@ -998,6 +1032,11 @@ transition: all 0.2s;
         margin-left: 15%;
         width: 100%;
     }
+    
+    .univ{
+        margin-top: 0%;
+        padding-top: 0%;
+    }
 
 }
 
@@ -1008,4 +1047,5 @@ transition: all 0.2s;
     }
 
 }
+
 

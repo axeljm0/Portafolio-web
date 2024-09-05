@@ -1,9 +1,24 @@
---My website--
+# Portafolio Personal
 
-This is my personal web, here yu can find my projects, and see my principal Skills.
+Este repositorio contiene mi portafolio personal, donde muestro algunos de los proyectos y habilidades que he adquirido a lo largo de mi carrera. El objetivo de este portafolio es presentar de manera organizada mis trabajos y brindar una forma sencilla de explorar mis proyectos.
 
---How to open the website--
+## Descripción
 
-The folders in the principal project location contains the requered styles and scipts that are necesary for correctly funtionality. You can open diectly in the "Index.html"
+El portafolio está diseñado para ser simple y fácil de navegar. Contiene secciones como:
 
-Enjoy!
+- **Sobre mí**: Una breve introducción personal y profesional.
+- **Proyectos**: Una galería de proyectos en los que he trabajado, con enlaces a los repositorios o demostraciones.
+- **Habilidades**: Un listado de mis habilidades técnicas y herramientas que manejo.
+- **Contacto**: Información sobre cómo puedes ponerte en contacto conmigo.
+
+## Cómo usar
+
+Puedes abrir el portafolio localmente clonando este repositorio y abriendo el archivo `index.html` en tu navegador.
+
+```bash
+git clone https://github.com/axeljm0/Portafolio-web
+cd MI-WEB-BETA-2
+open index.html
+
+
+

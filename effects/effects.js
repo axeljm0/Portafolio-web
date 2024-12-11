@@ -13,6 +13,7 @@ const Promesa1 = document.querySelector("cool-slider-info");
 //  OptionsLinks.classList.toggle("withe-letter-options", window.scrollY>1050)
 // });
 // botones mostrar mas o menos habilidades
+
 function OtrasImagenes(){
   const MasSKILS = document.querySelector(".Mas-Sobre-Skills").style.display = "block";
   const BTNshowless = document.querySelector(".botonMenosSkilss").style.display = "block";

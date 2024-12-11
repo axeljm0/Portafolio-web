@@ -889,17 +889,16 @@ transition: all 0.2s;
   
 /* 1000px */
 @media (max-width: 1000px){
-
-
     .Mas-Sobre-Skills{
         margin-top: 14%;
     }
 
     #caja1{
-        background-size: 200% ;
+        background: none;
         opacity: 200px;
         height: 40%;
         box-shadow: none;
+        padding-top: auto;
     }
 
     #info{
@@ -1000,14 +999,13 @@ transition: all 0.2s;
     #formacion-letter p{
         margin-left: 15%;
         width: 100%;    
-        margin-top: 30%;
 
     }
 
         #formacion-letter h1{
         margin-left: 15%;
         width: 100%;    
-        margin-top: 5%;
+        margin-top: 15%;
 
     }
 
@@ -1015,6 +1013,7 @@ transition: all 0.2s;
     #formacionONE{
         width: 40%;
         margin-left: 3%;
+        margin-top: 30%;
         
     }
 
@@ -1047,5 +1046,4 @@ transition: all 0.2s;
     }
 
 }
-
 

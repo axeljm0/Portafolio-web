@@ -7,6 +7,6 @@ function LinkPortafolio(){
 };
 
 function Curriculum(){
-   location.href="pdf/CV.pdf";
+   location.href="pdf/Curriculums.pdf";
  };
   

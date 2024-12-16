@@ -74,9 +74,7 @@ html{
 
 #caja1{
     padding: 100px;
-    background: linear-gradient(rgba(5, 7, 12, 0.75),
-    rgba(5, 7, 12, 0.50)),
-    url(fondo-caja1.jpg);
+    background: none;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;

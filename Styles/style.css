@@ -2,7 +2,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    
+
 }
 
 body{
@@ -14,8 +14,6 @@ body{
     z-index: 1;
     margin: 0%;
     background-size: 120%;
-
-
 }
 
 #colorpage{
@@ -41,7 +39,6 @@ html{
     backdrop-filter: blur(20px);
 }
 
-
 .options a{
    text-decoration: none;
    color: rgb(255, 255, 255); 
@@ -50,7 +47,6 @@ html{
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    font-size: 120%;
    margin-inline: 4px;
-   
 }
 
 .options a:hover{
@@ -84,9 +80,6 @@ html{
     margin-bottom: 10%;
 }
 
-.slider{
-    
-}
 
 .Cool-slider{
     background-color: #201f1f;
@@ -123,7 +116,7 @@ html{
     font-weight: bold;
     margin: 45px 0px 0px 78px;
     margin-left: 3%;    
-    text-shadow: rgba(20, 21, 22, 0.583)  1px 10px 20px ;
+    text-shadow: rgba(20, 21, 22, 0.583)  1px 10px 20px;
     max-width: 100px;
     margin-top: 165px;
 }
@@ -268,6 +261,13 @@ position: static;
  background-color: #201f1f;
  border-radius: 20px;
  border: solid black ;
+
+ display: grid;
+ grid-template-columns: 
+ repeat(
+     auto-fit,
+     minmax(5px, 0.08fr)
+ );
 }
 
 .left-right .slider img{
@@ -393,27 +393,62 @@ position: static;
 }
 
 .slider-mas2{
-    display: flex;
-    max-width: 200%;
-    height: 250px;
-    margin-right: 50%;
-    margin-left: 10%;
-    margin-top: 1%;
-    justify-content: center;
-    align-items: center;
+    max-width: 60%;
+    height: 230px;
     background-color: #201f1f;
     border-radius: 10px;
     border: solid black;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 
+    repeat(
+        auto-fit,
+        minmax(10px, 1fr)
+    );
 
 }
 
 .slider-mas2-img{
-    justify-content: center;
-    margin-right: 5%;
+    padding-top: 3%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 
+    repeat(
+        auto-fit,
+        minmax(10px, 0.13fr)
+    );
 
 }
 
+#php{
+  padding-top: 15%;
+}
+
 .slider-mas2-img img{
+    width: 10px;
+}
+
+.slider-mas2-1{
+    max-width: 30%;
+    height: auto;
+    background-color: #201f1f;
+    border-radius: 10px;
+    border: solid black;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.slider-mas2-1-img{
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 
+    repeat(
+        auto-fit,
+        minmax(25px, 1fr)
+    );
+}
+
+.slider-mas2-1-img img{
     width: 120px;
     margin-top: 20px;
 }
@@ -891,6 +926,26 @@ transition: all 0.2s;
   
 /* 1000px */
 @media (max-width: 1000px){
+
+    #info-letter{
+        margin: auto;
+    }
+
+    .left-right .slider{
+        padding-right: 5%;
+        max-width: 100%;
+        background-color: #201f1f;
+        border-radius: 10px;
+        border: solid black;
+
+        display: grid;
+        grid-template-columns: 
+        repeat(
+            auto-fit,
+            minmax(10px, 1fr)
+        );
+    }
+
     .Mas-Sobre-Skills{
         margin-top: 14%;
     }
@@ -917,13 +972,11 @@ transition: all 0.2s;
 
     #pie-pagina{
         height: 30%;
-
     }
 
     .oracle-text{
         margin-top: 10%;
         width: 90%;
-        
     }
 
     .estudios{
@@ -945,8 +998,7 @@ transition: all 0.2s;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
-        background-size:500% ;
-        
+        background-size:600% ;
     }
 
     .slider-mas{
@@ -955,12 +1007,35 @@ transition: all 0.2s;
     }
 
     .slider-mas2{
-        width: 70%;
-        height: 10%;
-
+        max-width: 200%;
+        height: auto;
+        background-color: #201f1f;
+        border-radius: 10px;
+        border: solid black;
+       
+    }
+    
+    .slider-mas2-img{
+        display: grid;
+        grid-template-columns: 
+        repeat(
+            auto-fit,
+            minmax(130px, 1fr)
+        );
     }
 
-    .options{
+    .slider-mas2-1{
+    max-width: 50%;
+    height: auto;
+    background-color: #201f1f;
+    border-radius: 10px;
+    border: solid black;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    }
+    
+        .options{
         width: 100%;
         transition: 1s;
         object-fit: cover;
@@ -976,14 +1051,12 @@ transition: all 0.2s;
         margin-top:3.5% ;
     }
 
-
     .estudios img{
         width: 20%;
     }
 
     .formacion3-caja{
         width: 100%;
-
     }
 
     #formacion3{
@@ -1003,14 +1076,12 @@ transition: all 0.2s;
         width: 100%;    
 
     }
-
         #formacion-letter h1{
         margin-left: 15%;
         width: 100%;    
         margin-top: 15%;
 
     }
-
 
     #formacionONE{
         width: 40%;

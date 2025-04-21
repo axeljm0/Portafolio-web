@@ -245,6 +245,7 @@ position: static;
     font-size: 27px;
     margin-left: 42.2%;
     margin-top: 5%;
+    margin-bottom: -10% ;
     font-family:Verdana,Tahoma, sans-serif;
     transition: all 0.5s;
 }
@@ -263,11 +264,10 @@ position: static;
 }
 
 .left-right .slider{
- max-width: 200%;
  height: 30px;
  margin-right: 10%;
  margin-left: 10%;
- padding-bottom: 43%;
+ padding-bottom: 60%;
  padding-left: 1%;
  background-color: #201f1f;
  border-radius: 20px;
@@ -282,7 +282,7 @@ position: static;
 }
 
 .left-right .slider img{
-    margin-left: 10px;
+    margin-left:60px;
     width: 132px;
     margin-bottom: 30%;
     margin-top: 35%;

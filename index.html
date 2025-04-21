@@ -56,6 +56,7 @@
         <img src="img/java-logo-1.png">
         <img src="img/Spring.png"> 
         <img src="img/Python.png" onmouseenter="Skill1()">
+        <img src="img/Ruby.png" alt="" srcset="">
         <img src="img/PHP-logo.svg.png" id="php">
         <img src="img/SQL.png">
         <img src="img/Postgres.png">
@@ -132,6 +133,7 @@
        <a href="https://github.com/axeljm0/Encryptor-Alura">Repo</a>
     </div>
   </div>
+  
 </div>
 </section>
 
@@ -161,10 +163,15 @@
       </div>
     </div>
     <Div class="computer-science">
-      <img src="img/Politécnico.jpg" id="formacion4" alt="">
-      <div class="formacion3p">
+      <img src="img/Politécnico.jpg" id="formacion4" width="200px">
+      <div id="formacion2-letter" style="margin-top:-200px ;">
         <h1>Bachelor in Computer Science</h1>
         <p>2020 - 2023</p>
+        <style>
+          #formacion4{
+            margin-bottom:15%;
+          } 
+        </style>
       </div>
     </Div>
     <button id="boton3" onclick="Curriculum()">Download CV</button>
@@ -178,9 +185,9 @@
     <form action="/Model/Data/guardar.php" method="post">
         <div class="field email">
             <div class="input-area">
-                <input type="text" name="nombre" placeholder="Nombre">
+                <input type="text" name="nombre" placeholder="Tu Nombre">
                 <input type="text"  name="correo" style="margin-top: 10px; 
-                margin-bottom: 10px;">
+                margin-bottom: 10px;" placeholder="Tu coreo">
                 <i class="icon fas fa-envelope"></i>
                 <i class="error error-icon fas fa-exclamation-circle"></i>
             </div>

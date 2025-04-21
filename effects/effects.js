@@ -27,5 +27,6 @@ function MenosImagenes(){
   };
 
 window.addEventListener("scroll", function(){
-  OptionsLinks.classList.toggle("boton2oculto", scrollY>4000);
+  OptionsLinks.classList.toggle("boton2oculto", scrollY>300);
 })
+

@@ -18,7 +18,7 @@ Puedes abrir el portafolio localmente clonando este repositorio y abriendo el ar
 ```bash
 git clone https://github.com/axeljm0/Portafolio-web
 cd Portafolio-web
-open index.html
+cd index.html
 
 
 

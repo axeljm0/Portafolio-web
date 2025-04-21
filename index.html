@@ -55,7 +55,7 @@
       <img src="img/Microsoft_.NET_logo.svg.png" alt="">  
         <img src="img/java-logo-1.png">
         <img src="img/Spring.png"> 
-        <img src="img/Python.png">
+        <img src="img/Python.png" onmouseenter="Skill1()">
         <img src="img/PHP-logo.svg.png" id="php">
         <img src="img/SQL.png">
         <img src="img/Postgres.png">
@@ -75,6 +75,8 @@
         <img src="img/Oraclecloud.png" alt="">
         <img src="img/aws.png" alt="">
         <img src="img/Azure.png" alt="" srcset="">
+        <img src="img/Linux.png" alt="">
+        <img src="img/cordoba.png" alt="">
       </div>
 
       <button onclick="OtrasImagenes()" class="botonUniq">
@@ -114,7 +116,6 @@
         <a href="https://github.com/axeljm0/Adivina-el-numero-secreto">Repo</a>
      </div>
    </div>
-  
  <div class="barbershop">
   <img src="img/barberíá.png">
    <p>Barbershop</p>
@@ -123,7 +124,6 @@
     <a onclick="alerta()" href="https://github.com/axeljm0/Barbershop">Repo</a>
     </div>
 </div>
-
   <Div class="encryptor-layout">
        <img src="img/text-encryptor.png" alt="Encryptor">
        <p>Text-encryptor</p>
@@ -146,7 +146,6 @@
         <p>July 2024 - Coursing</p>
         </div>
       </div>
-    
       <div class="formacion">
         <img src="img/Oracle.png" id="formacionONE">
         <div id="formacion-letter">
@@ -154,7 +153,6 @@
           <p>Back-end Development with Java and Spring framework. <br>January 2024 - July 2024 </br></p>
       </div>
     </div>
-
     <div class="univ">
      <img src="img/images.png" id="formacion2">
         <div id="formacion2-letter">
@@ -162,7 +160,6 @@
         <p>May 2024 - Coursing</p>
       </div>
     </div>
-
     <Div class="computer-science">
       <img src="img/Politécnico.jpg" id="formacion4" alt="">
       <div class="formacion3p">
@@ -178,11 +175,11 @@
   <H1 id="Hablemos">Hablemos</H1>
   <div class="wrapper">
     <header>Envíame un mensaje!, será un placer trabajar en su próxima idea</header>
-    <form>
+    <form action="/Model/Data/guardar.php" method="post">
         <div class="field email">
             <div class="input-area">
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Correo" style="margin-top: 10px; 
+                <input type="text" name="nombre" placeholder="Nombre">
+                <input type="text"  name="correo" style="margin-top: 10px; 
                 margin-bottom: 10px;">
                 <i class="icon fas fa-envelope"></i>
                 <i class="error error-icon fas fa-exclamation-circle"></i>
@@ -191,7 +188,7 @@
         </div>
         <div class="field password">
             <div class="input-area">
-                <input type="text" style="margin-top: 90px; padding-bottom: 30%;">
+                <input type="text" name="texto" style="margin-top: 90px; padding-bottom: 30%;">
                 <i class="icon fas fa-lock"></i>
                 <i class="error error-icon fas fa-exclamation-circle"></i>
             </div>
@@ -217,9 +214,18 @@
         </div>
    </footer>
 </body>
+
+  <!-- React y ReactDOM desde CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
 <script src="effects/effects.js"></script>
-<script src="app/main.js"></script>
-<script src="effects/dark.js"></script>
-<script src="componente1.jsx"></script>
-<script src="index.jsx"></script>
+<script src="/Model/Data/guardar.php"></script>
+<script src="/Controller/Mi_API_.js"></script>
+<script src="/Controller/app/endpoint.js"></script>
+<script src="Components/index.jsx"></script>
 </html>

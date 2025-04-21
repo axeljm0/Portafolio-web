@@ -1,6 +1,3 @@
-// const {express} = require("express");
-// const app = express();
-
 const Nav = document.querySelector(".options");
 const body = document.querySelector("Body")
 const OptionsLinks = document.querySelector(".options");
@@ -9,8 +6,6 @@ const BTNsDarkandLight = document.getElementById("BTNdark");
 const Promesa1 = document.querySelector("cool-slider-info");
 const Curriculum = document.getElementById("")
 const btnmas = document.querySelector("")
-
-const URL = ""
 
 // color del bar 
 // window.addEventListener("scroll", function(){
@@ -34,17 +29,3 @@ function MenosImagenes(){
 window.addEventListener("scroll", function(){
   OptionsLinks.classList.toggle("boton2oculto", scrollY>4000);
 })
-
-// apis publicas proximamente...
-fetch($)
-.then(response => response.json())
-  try{
-    const data = response.json();
-    console.log(data);
-  }catch(error){
-    console.log("Ha ocurrido un error")
-  }
-
-app.get("/") 
-
-

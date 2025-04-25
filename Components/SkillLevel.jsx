@@ -20,7 +20,9 @@ const[hovered, setHovered] = useState(false);
                     height: '100%',
                     backgroundColor: hovered ? color : '#007bff',
                     transition: 'width 0.5s ease-in-out',
-                }}></div>
+                }}>
+                    
+                </div>
         </div>
  </div>
     )

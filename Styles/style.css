@@ -68,9 +68,6 @@ html{
    margin-bottom: 0%;
 }
 
-#boton2{
-    
-}
 
 #caja1{
     padding: 100px;
@@ -247,6 +244,7 @@ position: static;
         }
        
     }
+
    
 
 .info-text{
@@ -315,6 +313,17 @@ position: static;
     padding: 0% ;
 }
 
+@media (max-width: 1000px){
+    .left-right .slider{
+        margin-top: 5%;
+    }
+
+    .slider-title{
+        margin-top: 20%;
+    }
+}
+
+
 .left-right .slider{
  height: 30px;
  margin-right: 10%;
@@ -346,6 +355,7 @@ position: static;
             scale: 1;
      }
  }
+
 
 
 .left-right .slider img{
@@ -522,7 +532,9 @@ position: static;
 
     #caja2{
         padding-bottom: 10%;
+        margin-top: 30%;
     }
+ 
 
 }
 
@@ -828,6 +840,12 @@ margin-top: 4%;
 #npm{
     margin-top: 60%;
 }
+@media (max-width: 1000px){
+    #Hablemos{
+        margin-top: 20%;
+    }
+}
+
 
 #hablemos-text{
     color:white;
@@ -851,6 +869,13 @@ margin-top: 4%;
     margin-left: 40%;
 }
 
+@media (max-width: 1000px){
+    #boton3{
+        float: left;
+        margin-left: 25%;
+    }
+
+}
 
 #boton3::before {
     content: "";
@@ -898,11 +923,23 @@ margin-top: 4%;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 1000px){
+.wrapper{
+    margin-top: 20%;
+}
+}
+
+
 @media (max-width:1000px) {
     .wrapper {
         width: 700px;
         margin-left: 13%;
     }
+
+    #Hablemos{
+        margin-top: 20%;
+    }
+
 }
 
 .wrapper header {
@@ -1244,9 +1281,6 @@ form input[type="submit"]:hover {
 
     }
 
-    #Hablemos-titulo{
-        text-align: center;
 
-    }
 
 }

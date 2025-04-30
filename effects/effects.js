@@ -26,18 +26,8 @@ function MenosImagenes(){
   document.querySelector(".botonMenosSkilss").style.display = "none";
   };
 
-window.addEventListener("scroll", function(){
-  OptionsLinks.classList.toggle(".boton2oculto", scrollY>700);
-})
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-});
-
-document.getElementById('info').forEach(el => {
-  observer.observe(el);
-});
+if(scrollY > 250){
+  OptionsLinks.remove("options");}
+else{
+  OptionsLinks.appendChild("boton2oculto")
+}

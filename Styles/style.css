@@ -365,6 +365,13 @@ position: static;
     margin-top: 35%;
 }
 
+#skill:hover{
+    transition: all 0.1s;
+    width: 120px;
+    cursor: pointer;
+    transform: translate(0%, -30%);
+}
+
 #icon{
  width: 42px;
 }

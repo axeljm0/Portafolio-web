@@ -328,7 +328,7 @@ position: static;
  height: 30px;
  margin-right: 10%;
  margin-left: 10%;
- padding-bottom: 50%;
+ padding-bottom: 65%;
  padding-left: 1%;
  background-color: #201f1f;
  border-radius: 20px;
@@ -360,7 +360,7 @@ position: static;
 
 .left-right .slider img{
     margin-left:60px;
-    width: 132px;
+    width: 112px;
     margin-bottom: 30%;
     margin-top: 35%;
 }

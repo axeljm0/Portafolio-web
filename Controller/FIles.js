@@ -5,3 +5,4 @@ function Curriculum2(){
    window.location.href="/pdf/CV.pdf";
  };
  
+ 

@@ -23,7 +23,7 @@ $datosExistentes[] = $nuevoDato;
 
 // 4. Guardar el array completo en el JSON
 file_put_contents($archivoJson, json_encode($datosExistentes, JSON_PRETTY_PRINT));
-header("locatio:index.html" );
+// header("locatio:index.html" );
 exit;
 
 // Migrar datos de personas a base de datos

@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="Styles/Animations.css">
     <link rel="stylesheet" href="Styles/light.css">
-    <title>Axel Jiménez Mar tich</title>
+    <title>Axel Jiménez Martich</title>
+        <!-- React y ReactDOM -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel para transformar JSX en tiempo real -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
  </head>
  
 <body class="cuerpo">
@@ -56,6 +62,7 @@
         <img src="img/java-logo-1.png"id="skill">
         <img src="img/Spring.png"id="skill"> 
         <img src="img/Python.png" id="skill">
+        <img src="img/django.png" id="skill" alt="">
         <img src="img/Ruby.png" id="skill">
         <img src="img/PHP-logo.svg.png" id="php">
         <img src="img/SQL.png" id="skill">
@@ -64,6 +71,7 @@
         <img src="img/VB.png" id="skill">
         <img src="img/html2.png" id="skill">
         <img src="img/CSS.png" id="icon">
+        <img src="img/Tailwind_CSS_Logo.svg.png" id="skill" alt="">
         <img src="img/JS.png" id="icon">
         <img src="img/Node.png" id="skill "alt="">
         <img src="img/express.png" id="skill">
@@ -189,7 +197,8 @@
   <H1 id="Hablemos" style="color: #ffff; text-align: center; font-size: 80px; margin-bottom: 5%; font-family:Verdana,Tahoma, sans-serif;font-weight: bold;"> Envíame un mensaje!</H1>
   <header id="hablemos-text">Puedes enviarme lo que sea, icluso sería un placer trabajar en su próxima idea</header>
   <div class="wrapper">
-    <form action="/Model/Data/guardar.php" method="post">
+    
+    <form id="form" >
         <div class="field email">
             <div class="input-area">
                 <input type="text" name="nombre" placeholder="Tu Nombre">
@@ -209,6 +218,13 @@
         </div>
         <input type="submit" value="Enviar">
     </form>
+
+    <dialog id="mensajeDialogo">
+      <img src="img/submit.png" alt="">
+      <p>¡Mensaje enviado correctamente!</p>
+      <button id="cerrarDialogo">Cerrar</button>
+    </dialog>
+  
 </div>
 </Section>
   
@@ -222,8 +238,8 @@
              <a href="https://github.com/axeljm0?tab=repositories"><img id="social-1" src="img/Github.svg"></a> 
              <a href="https://www.linkedin.com/in/axel-jim%C3%A9nez-martich-b403a3267/"><img id="social-2" src="img/LinkedIn.svg"></a>   
              <a href="https://www.instagram.com/axel_jimenez16/"> <img src="img/insta.png" alt="" id="social-2"></a>
-        </div>
-         <div class="pie-span">
+                </div>
+             <div class="pie-span">
           <span> Copyright © Axel Jiménez Mertich 2024  </span>
         </div>
    </footer>
@@ -241,5 +257,5 @@
 <script src="/Model/Data/guardar.php"></script>
 <script src="/Controller/Mi_API_.js"></script>
 <script src="/Controller/app/endpoint.js"></script>
-<script src="Components/index.jsx"></script>
+<script src="Components/index.js"></script>
 </html>

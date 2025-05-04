@@ -7,15 +7,6 @@ const Promesa1 = document.querySelector("cool-slider-info");
 const Curriculum = document.getElementById("")
 const btnmas = document.querySelector("")
 
-// color del bar 
-// window.addEventListener("scroll", function(){
-//   Nav.classList.toggle("black", window.scrollY>1050);
-// });
-// window.addEventListener("scroll", function(){
-//  OptionsLinks.classList.toggle("withe-letter-options", window.scrollY>1050)
-// });
-// botones mostrar mas o menos habilidades
-
 function OtrasImagenes(){
   const MasSKILS = document.querySelector(".Mas-Sobre-Skills").style.display = "block";
   const BTNshowless = document.querySelector(".botonMenosSkilss").style.display = "block";
@@ -31,3 +22,19 @@ if(scrollY > 250){
 else{
   OptionsLinks.appendChild("boton2oculto")
 }
+
+const formulario = document.getElementById('form');
+const dialogo = document.getElementById('mensajeDialogo');
+const cerrar = document.getElementById('cerrarDialogo');
+
+formulario.addEventListener('submit', function(e) {
+  e.preventDefault(); 
+  dialogo.showModal(); 
+
+  cerrar.addEventListener('click', function() {
+    dialogo.close(); 
+  });
+
+
+   }
+)

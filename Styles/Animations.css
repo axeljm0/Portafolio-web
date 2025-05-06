@@ -71,17 +71,15 @@ display: none;
 
 
   #info-back{
-    
-        content: '';
         background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
         background-size: 300%;
         height: 380px;
-        width: 1800px;
-        margin-right: -200px;
-        transform: translate(60px, 100px);
-        z-index: -1;
+        width: 1000px;
+        transform: translate(0px, 100px);
+        margin-left: 25%;
+        z-index: -3;
         animation: animate-border 10s linear infinite;
-        filter: blur(66px);
+        filter: blur(60px);
         opacity: 0.4;
     }
     
@@ -98,3 +96,11 @@ display: none;
     }
 
 
+@media (max-width: 1000px) {
+    #info-back {
+        transform: translate(-150px, 240px);
+        width: 82%;
+        height: 400px;
+
+  }
+}

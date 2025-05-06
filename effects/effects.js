@@ -34,7 +34,5 @@ formulario.addEventListener('submit', function(e) {
   cerrar.addEventListener('click', function() {
     dialogo.close(); 
   });
-
-
    }
 )

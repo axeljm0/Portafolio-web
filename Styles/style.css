@@ -70,15 +70,8 @@ html{
 
 
 #caja1{
-    padding: 100px;
-    background: none;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: 100% ;
-    opacity: 200px;
-    padding-bottom: 1%;
-    margin-bottom: 10%;
+    padding: 130px;
+    margin-bottom: 80px;
 }
 
 
@@ -99,39 +92,36 @@ html{
 }
 
 .Perfil img{
-    height: 430px;    
-    width: auto;
+    height: 450px;    
+    width: 450px;
     float: right;
-    border-radius: 10%;
-    border: solid  rgb(4, 109, 48);
-    border-width: 5px;
-    margin-top: 50px;
-    margin-right: 12%;
+    border-radius: 400px;
+    border: solid  rgb(3, 89, 13);
+    border-width: 10px;
+    margin-top: 10px;
+    margin-right: 18%;
     padding: 0%;
     
 }
 
 .Perfil h1{
-    font-size: 4.5rem;
+    font-size: 4.8rem;
     float:left;
     display: block;
     font-family: Verdana,Tahoma, sans-serif;
     background: linear-gradient(
         270deg,
-        #03ff6cb7, #00af4f, #008800, #057005
-      );
-
+       rgb(27, 27, 173), #47bf3c91, #2b9e00, rgb(15, 214, 15)), rgb(3, 3, 100);
     font-weight: bold;
     margin: 45px 0px 0px 78px;
-    margin-left: 3%;    
-    max-width:320px;
-    max-height: 300px;
-    margin-top: 165px;
-
+    margin-left: 13%;    
+    max-width:370px;
+    max-height: 330px;
+    margin-top: 125px;
     background-size: 600% 600%;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: moverGradiante 7s infinite;
+    animation: moverGradiante 12s infinite;
 
   }
 
@@ -149,20 +139,18 @@ html{
 
 .perfil-enlaces{
    padding: 0%;
-   margin-left: 4%;
+   margin-left: 14%;
+   margin-top: -20px;
 }
 
 #social-1perfil{
-width: 5%;
+width: 6.7%;
 padding: 0%;
-margin-bottom: 15%;
 }
 
 #social-2perfil{
-width: 5%;
+width: 6.7%;
 padding: 0%;
-margin-bottom: 15%;
-position: static;
 }
 
 #workstation{
@@ -574,7 +562,7 @@ position: static;
     border: solid;
     border-radius: 20px;
     box-shadow: #000000 8px 5px 10px;
-    padding-bottom: 20%;
+    padding-bottom: 40%;
 }
 
 

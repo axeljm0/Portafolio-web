@@ -30,7 +30,7 @@
     transform: translate(-130%, -110%);
 }
 
-#boton2 { 
+#boton2  { 
     content: "";
     position: absolute;
     top: 0;
@@ -68,3 +68,33 @@ display: none;
     
     }
 }
+
+
+  #info-back{
+    
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        background-size: 300%;
+        height: 380px;
+        width: 1800px;
+        margin-right: -200px;
+        transform: translate(60px, 100px);
+        z-index: -1;
+        animation: animate-border 10s linear infinite;
+        filter: blur(66px);
+        opacity: 0.4;
+    }
+    
+    @keyframes animate-border {
+        0% {
+            background-position: 0 0;
+        }
+        50% {
+            background-position: 400% 0;
+        }
+        100% {
+            background-position: 0 0;
+        }
+    }
+
+

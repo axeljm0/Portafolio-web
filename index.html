@@ -33,7 +33,7 @@
       <div class="my-name">
         <H1>Axel Jiménez <span id="span-line">Martich</span><span id="pie-title"> Full<span id="stack">Stack</span><span id="dev">developer</span></H1>
      </div>
-     <h2><img src="img/img portafolio cv.jpeg"></H2>
+     <h2><img src="img/porta.png"></H2>
     </div>
     <div class="perfil-enlaces">
       <a href="https://github.com/axeljm0?tab=repositories"><img id="social-1perfil" src="img/Github.svg"></a> 
@@ -44,6 +44,7 @@
  </section>
 
   <section>
+  <div id="info-back"></div>
     <div id="info">
       <div class="info-text">      
         <H1 class="info-title">About me</H1>
@@ -71,7 +72,7 @@
         <img src="img/VB.png" id="skill">
         <img src="img/html2.png" id="skill">
         <img src="img/CSS.png" id="icon">
-        <img src="img/Tailwind_CSS_Logo.svg.png" id="skill" alt="">
+        <img src="img/Tailwind_CSS_Logo.svg.png" id="skill" style="margin-top: 100p;">
         <img src="img/JS.png" id="icon">
         <img src="img/Node.png" id="skill "alt="">
         <img src="img/express.png" id="skill">
@@ -81,9 +82,9 @@
         <img src="img/Angular.png">
         <img src="img/Dart-logo.png" id="skill" alt="">
         <img src="img/swift.png" id="skill">
-        <img src="img/npm.png" id="npm">
+        <img src="img/npm.png" id="skill">
         <img src="img/Postman.png" id="skill">
-        <img src="img/apps-insomnia.svg" id="MenosTam">  
+        <img src="img/apps-insomnia.svg" id="skill">  
         <img src="img/docker.png"id="skill" alt="">
         <img src="img/Oraclecloud.png" id="skill"alt="">
         <img src="img/aws.png" id="skill"alt="">
@@ -93,6 +94,8 @@
         <img src="img/GIT.png"id="skill">
         <img src="img/Dynamics.png" id="skill"alt="">
         <img src="img/figma.png" id="skill"alt="">  
+        <img src="img/Antu_trello.svg.png" id="skill">
+        <img src="img/Notion.png" id="skill" alt="">
       </div>
       
       <button onclick="OtrasImagenes()" class="botonUniq">
@@ -131,6 +134,17 @@
     <a href="https://axeljm0.github.io/AXELFLIX/">View</a>
     <a href="https://github.com/axeljm0/AXELFLIX">Repo</a>
  </div>
+ <div class="technologies" style="margin-left: 20%;">
+  <span>
+    <img src="img/html2.png" alt="">
+    <img src="img/CSS.png" alt="">
+    <img src="img/Tailwind_CSS_Logo.svg.png" alt="">
+    <img src="img/JS.png" alt="">
+    <img src="img/java-logo-1.png" alt="">
+    <img src="img/Spring.png" alt="">
+  </span>
+</div>
+
 </div>
 
     <div class="project">
@@ -140,6 +154,13 @@
         <a href="https://axeljm0.github.io/Secret-number-game/">View</a>
         <a href="https://github.com/axeljm0/Adivina-el-numero-secreto">Repo</a>
      </div>
+       <div class="technologies">
+    <span>
+      <img src="img/html2.png" alt="">
+      <img src="img/CSS.png" alt="">
+      <img src="img/JS.png" alt="">
+    </span>
+  </div>
    </div>
 
 <div class="project">
@@ -148,6 +169,12 @@
     <div class="links">
     <a href="https://axeljm0.github.io/Barbershop/">View</a>
     <a href="https://github.com/axeljm0/Barbershop">Repo</a>
+    </div>
+    <div class="technologies">
+      <span>
+        <img src="img/html2.png" alt="">
+        <img src="img/CSS.png" alt="">
+      </span>
     </div>
 </div>
 
@@ -158,6 +185,13 @@
        <a href="https://axeljm0.github.io/Encryptor-Alura/">View</a>
        <a href="https://github.com/axeljm0/Encryptor-Alura">Repo</a>
     </div>
+    <div class="technologies">
+      <span>
+        <img src="img/html2.png" alt="">
+        <img src="img/CSS.png" alt="">
+        <img src="img/JS.png" alt="">
+      </span>
+    </div>
   </div>
 
   <div  class="project">
@@ -167,6 +201,11 @@
     <a href="https://github.com/axeljm0/Conversor-divisas">View</a>
     <a href="https://github.com/axeljm0/Conversor-divisas">Repo</a>
  </div>
+ <div class="technologies">
+  <span>
+    <img src="img/java-logo-1.png"  style="margin-left: -70px;">
+  </span>
+</div>
 </div>
 
 <div class="project">
@@ -175,8 +214,44 @@
   <div class="links">
   <a href="https://axeljm0.github.io/axegafit/">View</a>
   <a href="https://github.com/axeljm0/axegafit">Repo</a>
+  </div>
+  <div class="technologies" style="margin-left: 80px;">
+    <span>
+      <img src="img/html2.png" alt="">
+      <img src="img/CSS.png" alt="">
+      <img src="img/JS.png" alt="">
+      <img src="img/Python.png" alt="">
+      <img src="img/django.png" alt="">
+    </span>
+  </div>
+  <style>
+    .technologies {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: -130px;
+      transform: translate(0px, 40px);
+
+    }
+    .project span img {
+      width: 30px;
+      height: 30px;
+      margin: 5px;
+      border: none;
+      float: left;
+      border: #2b3c77 solid;
+      display: flex;
+      gap: 20px; /* Espacio entre íconos */
+      padding: 0 0 0 0; /* Solo padding arriba */
+    }
+    .project span {
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0%;
+      margin-left: -222px;
+    }
+  </style>
 </div>
-</div>  
 
 <div class="project">
   <img src="img/pong.png" alt="JS GAME">
@@ -185,7 +260,31 @@
   <a href="https://axeljm0.github.io/Pong-game//">View</a>
   <a href="https://github.com/axeljm0/Pong-game">Repo</a>
 </div>
+<div class="technologies">
+  <span>
+    <img src="img/html2.png" alt="">
+    <img src="img/CSS.png" alt="">
+    <img src="img/JS.png" alt="">
+  </span>
 </div>
+</div>
+
+<div class="project">
+  <img src="img/linksy.png" alt="Linksy">
+  <p>Linksy</p>
+  <div class="links">
+  <a href="https://axeljm0.github.io/Pong-game//">View</a>
+  <a href="https://github.com/axeljm0/Pong-game">Repo</a>
+</div>
+<div class="technologies">
+  <span>
+    <img src="img/html2.png" alt="">
+    <img src="img/CSS.png" alt="">
+    <img src="img/JS.png" alt="">
+  </span>
+</div>
+</div>
+
 </div>
 
 </main>

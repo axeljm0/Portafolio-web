@@ -385,7 +385,12 @@ padding: 0%;
      }
  }
 
-
+@media (max-width: 1000px){
+    .left-right .slider{
+        padding-bottom: 25%;
+        margin-top: 10%;
+    }
+}
 
 .left-right .slider img{
     margin-left:60px;
@@ -396,7 +401,7 @@ padding: 0%;
 
 #skill:hover{
     transition: all 0.1s;
-    width: 120px;
+    width: 190px;
     cursor: pointer;
     transform: translate(0%, -30%);
 }
@@ -567,7 +572,7 @@ padding: 0%;
 @media (max-width: 1000px){
 
     #caja2{
-        padding-bottom: 10%;
+        padding-bottom: 15%;
         margin-top: 30%;
     }
  
@@ -1123,16 +1128,13 @@ form input[type="submit"]:hover {
 
 /* 1000px */
 @media (max-width: 1000px){
-
-
-
     #info-letter{
         margin: auto;
     }
 
     .left-right .slider{
         padding-right: 10%;
-        padding-bottom: 145%;
+        padding-bottom: 155%;
         max-width: 100%;
         background-color: #201f1f;
         border-radius: 10px;
@@ -1161,7 +1163,7 @@ form input[type="submit"]:hover {
 
     #info{
         padding-bottom: 25%;
-        margin-top: 20%;
+        margin-top: 5%;
     }
 
     #info p{
@@ -1179,7 +1181,7 @@ form input[type="submit"]:hover {
     }
 
     #pie-pagina{
-        height: 30%;
+        height: 50%;
     }
 
     .oracle-text{

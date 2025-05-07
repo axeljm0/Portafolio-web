@@ -98,7 +98,7 @@ display: none;
 
 @media (max-width: 1000px) {
     #info-back {
-        transform: translate(-150px, 240px);
+        transform: translate(-150px, 100px);
         width: 82%;
         height: 400px;
 

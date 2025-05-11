@@ -357,7 +357,7 @@ padding: 0%;
  height: 30px;
  margin-right: 10%;
  margin-left: 10%;
- padding-bottom: 65%;
+ padding-bottom: 58%;
  padding-left: 1%;
  background-color: #201f1f;
  border-radius: 20px;
@@ -387,7 +387,7 @@ padding: 0%;
 
 @media (max-width: 1000px){
     .left-right .slider{
-        padding-bottom: 25%;
+        padding-bottom: 35%;
         margin-top: 10%;
     }
 }
@@ -881,9 +881,10 @@ margin-top: 4%;
 #npm{
     margin-top: 60%;
 }
+
 @media (max-width: 1000px){
     #Hablemos{
-        margin-top: 20%;
+        margin-top: 2%;
     }
 }
 
@@ -945,43 +946,35 @@ margin-top: 4%;
     }
 }
 
+#textme{
+    padding-top: 2%;
+    backdrop-filter: blur(40px);
+    margin-left: 10%;
+    margin-right:10% ;
+    margin-bottom: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 ::selection {
     color: #fff;
     background: #374be1;
 }
 
 .wrapper {
+    backdrop-filter: blur(40px);
     width: 860px;
-    margin-left: 25%;
-    padding: 40px 30px 50px 30px;
+    display: flex;
+    justify-content: center;
     margin-bottom: 20%;
-    background: #242222;
+    background:none;
     border-radius: 5px;
     text-align: center;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 1000px){
-.wrapper{
-    margin-top: 20%;
-}
-}
-
-
-@media (max-width:1000px) {
-    .wrapper {
-        width: 700px;
-        margin-left: 13%;
-    }
-
-    #Hablemos{
-        margin-top: 20%;
-    }
-
-}
 
 .wrapper header {
     font-size: 35px;
@@ -992,6 +985,8 @@ margin-top: 4%;
 
 .wrapper form {
     margin: 40px 0;
+    text-align: center;
+    top: 40px;
 }
 
 form .field {

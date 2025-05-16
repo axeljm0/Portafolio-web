@@ -11,9 +11,8 @@ body{
     background-image: url(saturn.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    z-index: 1;
-    margin: 0%;
-    background-size: 120%;
+    background-size: 137%;
+    background-position: center;
 }
 
 #colorpage{
@@ -37,6 +36,7 @@ html{
     align-items: center;
     z-index: 3;
     backdrop-filter: blur(20px);
+    height: 12%;
 }
 
 @media (max-width: 1000px){
@@ -54,7 +54,7 @@ html{
    text-align: right;
    display: inline;
    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   font-size: 120%;
+   font-size: 90%;
    margin-inline: 4px;
 }
 
@@ -79,6 +79,7 @@ html{
 
 
 #caja1{
+    display: grid;
     padding: 130px;
     margin-bottom: 80px;
 }
@@ -101,13 +102,13 @@ html{
 }
 
 .Perfil img{
-    height: 450px;    
-    width: 450px;
+    height: 300px;    
+    width: 300px;
     float: right;
     border-radius: 400px;
     border: solid  rgb(3, 89, 13);
     border-width: 10px;
-    margin-top: 10px;
+    margin-top: -40px;
     margin-right: 18%;
     padding: 0%;
     
@@ -123,19 +124,18 @@ html{
 }
 
 .Perfil h1{
-    font-size: 4.8rem;
+    margin-left: 17%;
+    font-size: 3.5rem;
     float:left;
     display: block;
     font-family: Verdana,Tahoma, sans-serif;
     background: linear-gradient(
-        270deg,
-       rgb(27, 27, 173), #47bf3c91, #2b9e00, rgb(15, 214, 15)), rgb(3, 3, 100);
+    270deg,
+    rgb(27, 27, 173), #47bf3c91, #2b9e00, rgb(15, 214, 15)), rgb(3, 3, 100);
     font-weight: bold;
-    margin: 45px 0px 0px 78px;
-    margin-left: 13%;    
-    max-width:370px;
+    max-width:340px;
     max-height: 330px;
-    margin-top: 125px;
+    margin-top: 20px;
     background-size: 600% 600%;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -163,11 +163,10 @@ html{
     }
 }
 
-
 .perfil-enlaces{
    padding: 0%;
-   margin-left: 14%;
-   margin-top: -20px;
+   margin-left: 23%;
+   margin-top: -50px;
 }
 
 #social-1perfil{
@@ -220,13 +219,29 @@ padding: 0%;
     align-content:end;
 }
 
- #info{
-    margin-top: -15%;
-    padding-bottom: 12%;
+#info-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30%;
+    padding-bottom: 8%;
     border-radius: 10px;
-    width: 90%;
-    margin-left: 5%;
-    height: 100%;
+    margin-left: 15%;
+    width: 70%;
+    animation: scroll linear;
+    animation-timeline: view() ;
+    animation-range: entry 0% cover 40%;
+}
+
+ #info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 8%;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-top:-360px;
+    width: 70%;
     background-color: #201f1f;
     animation: scroll linear;
     animation-timeline: view() ;
@@ -240,13 +255,6 @@ padding: 0%;
         to {
             opacity: 1;
             scale: 1;
-        }
-    }
-
-    @media (max-width: 1000px){
-        #info{
-            height: 380px;
-            
         }
     }
     
@@ -263,23 +271,20 @@ padding: 0%;
         to {
             opacity: 1;
             scale: 1;   
-        }
-       
+      }
     }
 
-   
+
 
 .info-text{
+    margin-top: 5%;
+    flex-direction: column;
     text-align: center ;
-    justify-content: center;
-    align-items: center;
 }
 
 @media (max-width: 1000px){
     .info-text{
         width: 900px;
-        margin-top: -40%;;
-
     }
 }
 
@@ -289,7 +294,8 @@ padding: 0%;
 }
 
  #info-letter {
-    font-size: 28px;
+    width: 800px;
+    font-size: 15px;
     font-family:Verdana,Tahoma, sans-serif;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -304,9 +310,6 @@ padding: 0%;
   text-align: center;
 }
 
-#info-2{
-    margin-bottom: 12%;
-}
 
 .Mas-Sobre-Skills{
    display: none;
@@ -336,10 +339,13 @@ padding: 0%;
     font-family:Verdana,Tahoma, sans-serif;
     color: rgb(98, 28, 28);
     margin-top: 5%;
+    animation: scroll linear;
+    animation-timeline: view() ;
+    animation-range: entry 0% cover 30%;
 }
 
 .left-right .slider img{
-    padding: 0% ;
+    padding: 0%;
 }
 
 @media (max-width: 1000px){
@@ -357,7 +363,7 @@ padding: 0%;
  height: 30px;
  margin-right: 10%;
  margin-left: 10%;
- padding-bottom: 58%;
+ padding-bottom: 68%;
  padding-left: 1%;
  background-color: #201f1f;
  border-radius: 20px;
@@ -367,7 +373,7 @@ padding: 0%;
  grid-template-columns: 
  repeat(
      auto-fit,
-     minmax(150px, 0.08fr)
+     minmax(100px, 0.1fr)
  );
 
  animation: scroll linear;
@@ -394,21 +400,18 @@ padding: 0%;
 
 .left-right .slider img{
     margin-left:60px;
-    width: 112px;
+    width: 75px;
     margin-bottom: 30%;
     margin-top: 35%;
 }
 
 #skill:hover{
     transition: all 0.1s;
-    width: 190px;
+    width: 120px;
     cursor: pointer;
     transform: translate(0%, -30%);
 }
 
-#icon{
- width: 42px;
-}
 
 .botonUniq{
     background: black;
@@ -539,10 +542,6 @@ padding: 0%;
 
 }
 
-#icon2{
-    width: 110px;
-    margin-bottom: 2.5%;
-}
 
 #caja2{
     background-color: #201f1f;
@@ -592,14 +591,14 @@ padding: 0%;
 .projects{
     display: grid;
     grid-template-columns: 
-    repeat(auto-fit, minmax(400px, 1fr));
+    repeat(auto-fit, minmax(390px, 1fr));
     gap: 20px;
     justify-items: center;
       
 }
 
 .project{
-    width: 400px;
+    width: 335px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -613,11 +612,11 @@ padding: 0%;
 
 
  .project img{
-margin-top: 4%;
+ margin-top: 4%;
  padding: 0%;
  margin-left: 5%;
- width: 350px;
- height: 200px;
+ width: 300px;
+ height: 150px;
  border-radius: 20px;
  border: solid  rgb(2, 71, 2)	;
  font-family:Verdana,Tahoma, sans-serif; ;
@@ -1157,13 +1156,13 @@ form input[type="submit"]:hover {
     }
 
     #info{
-        padding-bottom: 25%;
-        margin-top: 5%;
+        margin-bottom: 100%;
+        z-index: 1;
+        transform: translate(0px, 770px);
     }
 
     #info p{
         text-align: center;
-
         width: 80%;
     }
 

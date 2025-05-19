@@ -274,8 +274,6 @@ padding: 0%;
       }
     }
 
-
-
 .info-text{
     margin-top: 5%;
     flex-direction: column;
@@ -639,6 +637,7 @@ padding: 0%;
     margin-inline: 15px;
     border-radius: 15px;
     transition: all 0.2s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
  }
  

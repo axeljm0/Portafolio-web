@@ -39,6 +39,16 @@ html{
     height: 12%;
 }
 
+.ocultar{
+    display: none;
+    animation: all 1s;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+
+
 @media (max-width: 1000px){
     .options{
         transition: 1s;
@@ -219,21 +229,7 @@ padding: 0%;
     align-content:end;
 }
 
-#info-back{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -30%;
-    padding-bottom: 8%;
-    border-radius: 10px;
-    margin-left: 15%;
-    width: 70%;
-    animation: scroll linear;
-    animation-timeline: view() ;
-    animation-range: entry 0% cover 40%;
-}
-
- #info{
+#info{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -358,11 +354,14 @@ padding: 0%;
 
 
 .left-right .slider{
+ display: flex ;
+ justify-content: center;
+ align-items: center;
  height: 30px;
+ margin-bottom: -200px;
  margin-right: 10%;
  margin-left: 10%;
- padding-bottom: 68%;
- padding-left: 1%;
+ padding-bottom: 90%;
  background-color: #201f1f;
  border-radius: 20px;
  border: solid black ;
@@ -371,7 +370,7 @@ padding: 0%;
  grid-template-columns: 
  repeat(
      auto-fit,
-     minmax(100px, 0.1fr)
+     minmax(100px, 0.01fr)
  );
 
  animation: scroll linear;
@@ -397,10 +396,8 @@ padding: 0%;
 }
 
 .left-right .slider img{
-    margin-left:60px;
-    width: 75px;
-    margin-bottom: 30%;
-    margin-top: 35%;
+    width: 75px;    
+    margin: 30%;
 }
 
 #skill:hover{
@@ -453,94 +450,6 @@ padding: 0%;
     }
 }
 
-.slider-nas-title{
-    text-align: center;
-    font-size: 200%;
-    margin-top: 5%;
-    margin-right: 30%;
-    font-weight: bold;
-    font-family:Verdana,Tahoma, sans-serif;
-    color: rgb(98, 28, 28);
-    
-}
-
-.slider-mas-img img{
-    width: 150px;
-    margin-top: 29px;
-}
-
-.slider-mas-boton{
-    background: rgb(174, 165, 165);
-    cursor: pointer;
-    border: none;
-    padding: 16px 32px;
-    color: rgb(0, 0, 0);
-    font-size: 27px;
-    margin-left: 44%;
-    margin-top: 5%;
-    font-family:Verdana,Tahoma, sans-serif;
-}
-
-.slider-mas-boton:hover{
-    background: rgb(134, 129, 129);
-    cursor: pointer;
-
-}
-
-.slider-mas-title2{
-    text-align: center;
-    font-size: 200%;
-    margin-top: 4%;
-    margin-right: 25%;
-    font-weight: bold;
-    font-family:Verdana,Tahoma, sans-serif;
-    color: rgb(98, 28, 28);
-}
-
-.slider-mas2{
-    padding-bottom: 23%;
-    max-width: 60%;
-    height: 230px;
-    background-color: #201f1f;
-    border-radius: 10px;
-    border: solid black;
-    margin-left: 20%;
-    display: grid;
-    grid-template-columns: 
-    repeat(
-        auto-fit,
-        minmax(10px, 1fr)
-    );
-
-}
-
-.slider-mas2-img{
-    padding-top: 3%;
-    margin-left: 5%;
-    display: grid;
-    grid-template-columns: 
-    repeat(
-        auto-fit,
-        minmax(180px, 0.13fr)
-    );
-
-}
-
-#php{
-  padding-top: 15%;
-}
-
-.slider-mas2-img img{
-    width: 10px;
-
-}
-
-#iconBootstrap{
-    width: 130px;
-
-}
-
-
 #caja2{
     background-color: #201f1f;
     padding-bottom: 10%;
@@ -585,11 +494,10 @@ padding: 0%;
     margin-top: 5%;   
 }
   
-
 .projects{
     display: grid;
     grid-template-columns: 
-    repeat(auto-fit, minmax(390px, 1fr));
+    repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     justify-items: center;
       
@@ -973,9 +881,8 @@ padding: 0%;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-
 .wrapper header {
-    font-size: 35px;
+    font-size: 25px;
     font-weight: 600;
     color:white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -1017,8 +924,8 @@ form .field .input-area {
 }
 
 form input {
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     outline: none;
     padding: 0 45px;
     font-size: 18px;
@@ -1028,6 +935,12 @@ form input {
     border: 1px solid #bfbfbf;
     border-bottom-width: 2px;
     transition: all 0.2s ease;
+}
+
+@media (max-width: 1000px){
+    form input{
+        width: 100%;
+    }
 }
 
 form .field input:focus,
@@ -1141,23 +1054,12 @@ form input[type="submit"]:hover {
             minmax(140px, 2fr)
         );
     }
-
-    .Mas-Sobre-Skills{
-        margin-top: 14%;
-    }
-
     #caja1{
         background: none;
         opacity: 200px;
         height: 40%; 
         box-shadow: none;
         padding-top: auto;
-    }
-
-    #info{
-        margin-bottom: 100%;
-        z-index: 1;
-        transform: translate(0px, 770px);
     }
 
     #info p{

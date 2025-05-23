@@ -80,7 +80,7 @@ display: none;
         background-size: 300%;
         height: 380px;
         width: 810px;
-        transform: translate(140px, 100px);
+        transform: translate(230px, 100px);
         animation: animate-border 10s linear infinite;
         filter: blur(60px);
         opacity: 0.4;
@@ -105,6 +105,7 @@ display: none;
     #info-back {
         width: 82%;
         height: 400px;
+        transform: translate(100px, 130px);
         }
 
         #info{

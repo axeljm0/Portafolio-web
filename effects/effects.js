@@ -1,10 +1,14 @@
 const formulario = document.getElementById('form');
 const dialogo = document.getElementById('mensajeDialogo');
 const cerrar = document.getElementById('cerrarDialogo');
+const body = document.querySelector('body');
 
 formulario.addEventListener('submit', function(e) {
   e.preventDefault(); 
   dialogo.showModal(); 
+
+body.style.overflow = 'hidden'; // Deshabilitar el scroll del body
+  body.style.height = '100%'; // Evitar el scroll del body
 
   cerrar.addEventListener('click', function() {
     dialogo.close(); 
@@ -20,3 +24,4 @@ window.addEventListener("scroll", function () {
     elemento.classList.remove("oculto");
   }
 });
+

@@ -17,7 +17,7 @@
 <body class="cuerpo">
 <header>
  <Nav class="options">
-  <button id="boton2" onclick="window.location.href='pdf/CV.pdf'">Curriculum</button>
+  <button id="boton2" onclick="window.location.href='pdf/AXEL CV.pdf'">Curriculum</button>
      <ul>
      <a href="#info-2">Skills</a>
      <a href="#caja2">Work</a>
@@ -63,6 +63,7 @@
         <img src="img/Python.png" id="skill">
         <img src="img/django.png" id="skill" alt="">
         <img src="img/FastAPI.png" id="skill">
+        <img src="img/mongodb_plain_logo_icon_146422.png" id="skill">
         <img src="img/Ruby.png" id="skill">
         <img src="img/PHP-logo.svg.png" id="php">
         <img src="img/laravel.svg" id="skill">
@@ -139,12 +140,19 @@
        <a href="https://github.com/axeljm0/TaskAssign">Repo</a>
     </div>
     <div class="technologies">
-      <span>
+      <span id="tech">
         <img src="img/React-icon.svg" alt="">
         <img src="img/Tailwind_CSS_Logo.svg.png" alt="">
         <img src="img/Python.png" alt="">
         <img src="img/FastAPI.png" alt="">
+        <img src="img/mongodb_plain_logo_icon_146422.png" alt="">
       </span>
+
+      <style>
+        #tech {
+          margin-left: 0.1px;
+        }
+      </style>
     </div>
   </div>
 
@@ -205,7 +213,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: -130px;
+      margin-bottom: -150px;
     }
     .project span img {
       width: 30px;
@@ -316,7 +324,7 @@
 </main>
 </section>
 
-    <button id="boton3" onclick="window.location.href='pdf/CV.pdf'">Download CV</button>
+    <button id="boton3" onclick="window.location.href='pdf/AXEL CV.pdf'">Download CV</button>
 
   </section>
 
@@ -348,10 +356,47 @@
     </form>
 
     <dialog id="mensajeDialogo">
-      <img src="img/submit.png" alt="">
+      <img src="img/submit copy.png" alt="">
       <p>message sent successfully!</p>
       <button id="cerrarDialogo">Close</button>
     </dialog>
+    <style>
+
+      dialog {
+        padding: 40px;
+        border-radius: 10px;
+        border: none;
+        position: fixed;
+        z-index: 10;
+        margin-top: 5%;
+        margin-left: 35%;
+      }
+
+      dialog p {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+      }
+
+      dialog button {
+        background-color: #1f1d1d;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      dialog button:hover {
+        background-color: #0e5604;
+      }
+
+      @media (max-width: 1000px) {
+        dialog {
+          margin-top: 50%;
+        }
+      }
+
+    </style>
   
 </div>
 </Section>

@@ -253,7 +253,7 @@ padding: 0%;
             scale: 1;
         }
     }
-    
+
    #textme{
     animation: scroll linear;
     animation-timeline: view() ;
@@ -356,7 +356,6 @@ padding: 0%;
 .left-right .slider{
  display: flex ;
  justify-content: center;
- align-items: center;
  height: 30px;
  margin-bottom: -200px;
  margin-right: 10%;
@@ -370,13 +369,14 @@ padding: 0%;
  grid-template-columns: 
  repeat(
      auto-fit,
-     minmax(100px, 0.01fr)
+     minmax(120px, 0.01fr)
  );
 
  animation: scroll linear;
  animation-timeline: view() ;
  animation-range: entry 0% cover 30%;
 }
+
  @keyframes scroll {
     from {
          opacity: 0;
@@ -392,6 +392,11 @@ padding: 0%;
     .left-right .slider{
         padding-bottom: 35%;
         margin-top: 10%;
+    }
+
+    .left-right .slider img{
+        width: 100px;
+        margin-left: 100%;
     }
 }
 
@@ -1054,12 +1059,10 @@ form input[type="submit"]:hover {
             minmax(140px, 2fr)
         );
     }
-    #caja1{
-        background: none;
-        opacity: 200px;
-        height: 40%; 
-        box-shadow: none;
-        padding-top: auto;
+    .left-right .slider img{
+        justify-content: center;
+        align-self: center;
+
     }
 
     #info p{
@@ -1110,30 +1113,6 @@ form input[type="submit"]:hover {
         z-index: -1;
         background-size: 600%;
     
-    }
-
-    .slider-mas{
-        width: 70%;
-        height: 10%;
-    }
-
-    .slider-mas2{
-        max-width: 200%;
-        height: auto;
-        background-color: #201f1f;
-        border-radius: 10px;
-        border: solid black;
-        margin-right: 20%;
-        padding-bottom: 3%;
-    }
-    
-    .slider-mas2-img{
-        display: inline-block;
-        grid-template-columns: 
-        repeat(
-            auto-fit,
-            minmax(130px, 1fr)
-        );
     }
 
     .options{

@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="Styles/Animations.css">
     <link rel="stylesheet" href="Styles/light.css">
+    <link rel="stylesheet" href="Components/css/index.css">
+    
     <title>Axel Jiménez Martich</title>
         <!-- React y ReactDOM -->
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel para transformar JSX en tiempo real -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
  </head>
 <body class="cuerpo">
 <header>
@@ -25,13 +28,13 @@
     </ul>
 </Nav>
 </header>
-
+  
  <section id="caja1">
     <div class="Perfil">
       <div class="my-name">
         <H1>Axel Jiménez <span id="span-line">Martich</span><span id="pie-title"> Full<span id="stack">Stack</span><span id="dev">developer</span></H1>
      </div>
-     <h2><img src="img/porta.png"></H2>
+     <h2><img src="img/portafolio.jpg"></H2>
     </div>
     <div class="perfil-enlaces">
       <a href="https://github.com/axeljm0?tab=repositories"><img id="social-1perfil" src="img/Github.svg"></a> 
@@ -111,7 +114,6 @@
         <img src="img/Power BI icon.png" id="skill">
         <img src="img/VirtualBox-Logo.png"id="skill">
         <img src="img/Workstation.png" id="skill">
-
       </div>
 </div>    
 </section>
@@ -119,17 +121,16 @@
 <section id="caja2"> 
    <h3 class="caja2-title">Projects</h3>
 
- <main class="projects"  > 
+ <main class="projects"> 
       <div class="project">
-        <img src="img/Screenshot 2025-05-20 213439.png" alt="JS GAME">
-        <p>ecomerce - project</p>
+        <img src="Assets/ecomerce.png" alt="JS GAME">
+        <p>MiTienda</p>
         <div class="links">
-        <a href="https://axeljm0.github.io/ecomerce-project/">View</a>
-        <a href="https://github.com/axeljm0/ecomerce-project">Repo</a>
+        <a onclick="Dialog(0)" id="btn-view">View</a>
+        <a id="btn-repo" href="https://github.com/axeljm0/ecomerce-project">Repo</a>
      </div>
        <div class="technologies">
     <span>
-      <img src="img/JavaScript-logo.png" alt="">
       <img src="img/Node.png" alt="">
       <img src="img/express.png" alt="">
     </span>
@@ -138,9 +139,9 @@
 
     <Div class="project">
      <img src="img/taskassign.png" alt="Encryptor">
-       <p>TaskAssign Pro</p>
+       <p>TaskAssign</p>
        <div class="links">
-       <a href="https://git hub.com/axeljm0/TaskAssign">View</a>
+       <a onclick="Dialog(1)">View</a>
        <a href="https://github.com/axeljm0/TaskAssign">Repo</a>
     </div>
     <div class="technologies">
@@ -161,10 +162,10 @@
   </div>
 
   <div class="project">
-    <img src="img/AXELFLIX.png" alt="JS GAME">
+    <img src="Assets/AXELFLIX.png" alt="JS GAME">
     <p>AXELFLIX</p>
     <div class="links">
-    <a href="https://axeljm0.github.io/AXELFLIX/">View</a>
+    <a onclick="Dialog(2)">View</a>
     <a href="https://github.com/axeljm0/AXELFLIX">Repo</a>
  </div>
  <div class="technologies" style="margin-left: 20%;">
@@ -179,10 +180,10 @@
 </div>
 
 <div class="project">
-  <img src="img/linksy.png" alt="Linksy">
+  <img src="img/linksy.png  " alt="Linksy">
   <p>Linksy</p>
   <div class="links">
-  <a href="https://axeljm0.github.io/Linksy/">View</a>
+  <a onclick="Dialog(3)">View</a>
   <a href="https://github.com/axeljm0/Linksy">Repo</a>
 </div>
 <div class="technologies">
@@ -198,9 +199,9 @@
 
 <div class="project">
   <img src="img/Login  - copia.png" alt="JS GAME">
-  <p>AXEGAFIT</p>
+  <p>AXEGA</p>
   <div class="links">
-  <a href="https://axeljm0.github.io/axegafit/">View</a>
+  <a onclick="Dialog(4)">View</a>
   <a href="https://github.com/axeljm0/axegafit">Repo</a>
   </div>
   <div class="technologies" style="margin-left: 80px;">
@@ -249,7 +250,7 @@
   <img src="img/Cuenta.png">
   <p>AXEL BANK</p>
   <div class="links">
-  <a href="https://github.com/axeljm0/Conversor-divisas">View</a>
+  <a onclick="Dialog(5)">View</a>
   <a href="https://github.com/axeljm0/Conversor-divisas">Repo</a>
 </div>
 <div class="technologies">
@@ -263,7 +264,7 @@
   <img src="img/pong.png" alt="JS GAME">
   <p>Pong game</p>
   <div class="links">
-  <a href="https://axeljm0.github.io/Pong-game//">View</a>
+  <a onclick="Dialog(6)">View</a>
   <a href="https://github.com/axeljm0/Pong-game">Repo</a>
 </div>
 <div class="technologies">
@@ -280,7 +281,7 @@
         <img src="img/jsgame.png" alt="JS GAME">
         <p>Secret number game</p>
         <div class="links">
-        <a href="https://axeljm0.github.io/Secret-number-game/">View</a>
+        <a onclick="Dialog(7)">View</a>
         <a href="https://github.com/axeljm0/Adivina-el-numero-secreto">Repo</a>
      </div>
        <div class="technologies">
@@ -297,7 +298,7 @@
   <img src="img/barberíá.png">
    <p>Barbershop</p>
     <div class="links">
-    <a href="https://axeljm0.github.io/Barbershop/">View</a>
+    <a onclick="Dialog(8)">View</a>
     <a href="https://github.com/axeljm0/Barbershop">Repo</a>
     </div>
     <div class="technologies">
@@ -313,6 +314,9 @@
 
     <button id="boton3" onclick="window.location.href='pdf/cv.pdf'">Download CV</button>
 
+  </section>
+
+  <section class="references">
   </section>
 
 <Section id="textme" style="margin-top: 20%;">
@@ -347,8 +351,8 @@
       <p>message sent successfully!</p>
       <button id="cerrarDialogo">Close</button>
     </dialog>
-    <style>
 
+    <style>
       dialog {
         padding: 40px;
         border-radius: 10px;
@@ -382,7 +386,6 @@
           margin-top: 50%;
         }
       }
-
     </style>
   
 </div>
@@ -394,15 +397,15 @@
       <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1f1d1d" fill-opacity="1" d="M0,256L80,229.3C160,203,320,149,480,149.3C640,149,800,203,960,218.7C1120,235,1280,213,1360,202.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
   
  <footer id="pie-pagina">
-          <div class="pie-pagina-enlaces">
+        <div class="pie-pagina-enlaces">
              <a href="https://github.com/axeljm0?tab=repositories"><img id="social-1" src="img/Github.svg"></a> 
              <a href="https://www.linkedin.com/in/axel-jim%C3%A9nez-martich-b403a3267/"><img id="social-2" src="img/LinkedIn.svg"></a>   
              <a href="https://www.instagram.com/axel_jimenez16/"> <img src="img/insta.png" alt="" id="social-2"></a>
-                </div>
+        </div>
              <div class="pie-span">
           <span> Copyright © Axel Jiménez Mertich 2024  </span>
-        </div>
-   </footer>
+      </div>
+</footer>
 </body>
 
   <!-- React y ReactDOM desde CDN -->
@@ -414,9 +417,6 @@
 
 
 <script src="effects/effects.js"></script>
-<script src="/Model/Data/guardar.php"></script>
-<script src="/Controller/Mi_API_.js"></script>
-<script src="/Controller/app/endpoint.js"></script>
 <script src="Components/index.js"></script>
 </html>
 

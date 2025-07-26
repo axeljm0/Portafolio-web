@@ -1,0 +1,63 @@
+dialog {
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.img-dialog {
+  width: 100%;
+  border-radius: 10px;
+  margin: 15px 0;
+  object-fit: cover;
+}
+
+.btn-view {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  margin-right: 10px;
+}
+
+.btn-view:hover {
+  background: #0056b3;
+}
+
+.btn-close {
+  padding: 10px 20px;
+  background: #ccc;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-close:hover {
+  background: #999;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}

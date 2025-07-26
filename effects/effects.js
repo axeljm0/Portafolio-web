@@ -14,7 +14,7 @@ formulario.addEventListener('submit', function(e) {
 )
 
 window.addEventListener("scroll", function () {
-  const elemento = document.getElementById(".options");
+  const elemento = document.getElementById("  .options");
   if (window.scrollY > 150) {
     elemento.classList.add("oculto");
   } else {

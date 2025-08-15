@@ -1,423 +1,1545 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" >
-    <link rel="stylesheet" href="Styles/reset.css">
-    <link rel="stylesheet" href="Styles/style.css">
-    <link rel="stylesheet" href="Styles/Animations.css">
-    <link rel="stylesheet" href="Styles/light.css">
-    <link rel="stylesheet" href="Components/css/index.css">
-    
-    <title>Axel Jiménez Martich</title>
-        <!-- React y ReactDOM -->
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <!-- Babel para transformar JSX en tiempo real -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    
- </head>
-<body class="cuerpo">
-<header>
- <Nav class="options">
-  <button id="boton2" onclick="window.location.href='pdf/cv.pdf'">Curriculum</button>
-     <ul>
-     <a href="#info-2">Skills</a>
-     <a href="#caja2">Work</a>
-     <a href="#textme">Contact me</a>
-    </ul>
-</Nav>
-</header>
-  
- <section id="caja1">
-    <div class="Perfil">
-      <div class="my-name">
-        <H1>Axel Jiménez <span id="span-line">Martich</span><span id="pie-title"> Full<span id="stack">Stack</span><span id="dev">developer</span></H1>
-     </div>
-     <h2><img src="img/portafolio.jpg"></H2>
-    </div>
-    <div class="perfil-enlaces">
-      <a href="https://github.com/axeljm0?tab=repositories"><img id="social-1perfil" src="img/Github.svg"></a> 
-      <a href="https://www.linkedin.com/in/axel-jim%C3%A9nez-martich-b403a3267/"><img id="social-2perfil" src="img/LinkedIn.svg"></a>   
-  </div>
-  <!-- <video muted autoplay loop type="video/mp4" src="icons/clipfondo.mp4" ></video>
-  <div class="capa"></div> -->
- </section>
 
-  <section class="info-section">
-    <div id="info-back"></div>
-      <div id="info">
-      <div class="info-text">      
-        <H1 class="info-title">About me</H1>
-        <p id="info-letter">👋 Hello!, I'm Axel Jiménez Martich, passionate about programming and evrithing has relationship with computer science, I have a knowedge about some technologies that yu can see more down and I'm specializing in back-end development, also i've solid knowedge of cybersecurity, DevOps, etc.</p>
-      </div>  
-    </div>
-  </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axel Jiménez Martich - Full Stack Developer</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
-<section id="info-2">
-  <H1 class="slider-title" style="color: #ffff;">Skills</H1>
-  <div class="left-right">
-     <div class="slider" style="display:grid;"> 
-        <img src="img/C_Sharp_Logo_2023.svg.png" id="skill">
-        <img src="img/Microsoft_.NET_logo.svg.png"id="skill" alt="">  
-        <img src="img/blaor.png" id="skill"alt="">
-        <img src="img/java-logo-1.png"id="skill">
-        <img src="img/Spring.png"id="skill"> 
-        <img src="img/Python.png" id="skill">
-        <img src="img/django.png" id="skill" alt="">
-        <img src="img/FastAPI.png" id="skill">
-        <img src="img/mongodb_plain_logo_icon_146422.png" id="skill">
-        <img src="img/Ruby.png" id="skill">
-        <img src="img/PHP-logo.svg.png" id="php">
-        <img src="img/laravel.svg" id="skill">
-        <img src="img/composer.png" id="skill">
-        <img src="img/Chocolatey_icon copy.png" id="skill">
-        <img src="img/SQL.png" id="skill">
-        <img src="img/sqlite.svg" id="skill">
-        <img src="img/Postgres.png" id="skill">
-        <img src="img/SQL server.png"id="skill" alt="">
-        <img src="img/VB.png" id="skill">
-        <img src="img/html copy.png" id="skill">
-        <img src="img/CSS copy.png" id="skill">
-        <img src="img/Tailwind_CSS_Logo.svg.png" id="skill">
-        <img src="img/JavaScript-logo.png" id="skill">
-        <img src="img/Node.png" id="skill"alt="">
-        <img src="img/express.png" id="skill">
-        <img src="img/React-icon.svg" id="skill">
-        <img src="img/expo.png" id="skill">
-        <img src="img/Electron_Software_Framework_Logo.svg.png" id="skill">
-        <img src="img/Vue.png" id="skill">
-        <img src="img/Vite.js.png" id="skill"alt="">
-        <img src="img/87547253-bf050400-c6a2-11ea-950a-280311bc6cc8.png" id="skill"alt="">
-        <img src="img/Angular.png" id="skill" alt="">
-        <img src="img/Dart-logo.png" id="skill" alt="">
-        <img src="img/swift.png" id="skill">
-        <img src="img/npm.png"  id="npm">
-        <img src="img/Postman.png" id="skill">
-        <img src="img/apps-insomnia.svg" id="skill">  
-        <img src="img/swagger.svg" id="skill">
-        <img src="img/docker.png"id="skill" alt="">
-        <img src="img/Wordpress.png" id="skill">
-        <img src="img/Oraclecloud.png" id="skill"alt="">
-        <img src="img/aws.png" id="skill"alt="">
-        <img src="img/Azure.png" id="skill">
-        <img src="img/Linux.png" id="skill">
-        <img src="img/cordoba.png"id="skill" alt="">
-        <img src="img/GIT.png"id="skill">
-        <img src="img/terminal.png" id="skill">
-        <img src="img/Dynamics.png" id="skill"alt="">
-        <img src="img/figma.png" id="skill"alt="">  
-        <img src="img/Antu_trello.svg.png" id="skill">
-        <img src="img/Notion.png" id="skill" alt="">
-        <img src="img/office.png" id="skill">
-        <img src="img/Canva.png" id="skill"> 
-        <img src="img/Power BI icon.png" id="skill">
-        <img src="img/VirtualBox-Logo.png"id="skill">
-        <img src="img/Workstation.png" id="skill">
-      </div>
-</div>    
-</section>
-  
-<section id="caja2"> 
-   <h3 class="caja2-title">Projects</h3>
-
- <main class="projects"> 
-      <div class="project">
-        <img src="Assets/ecomerce.png" alt="JS GAME">
-        <p>MiTienda</p>
-        <div class="links">
-        <a onclick="Dialog(0)" id="btn-view">View</a>
-        <a id="btn-repo" href="https://github.com/axeljm0/ecomerce-project">Repo</a>
-     </div>
-       <div class="technologies">
-    <span>
-      <img src="img/Node.png" alt="">
-      <img src="img/express.png" alt="">
-    </span>
-  </div>
-</div>
-
-    <Div class="project">
-     <img src="img/taskassign.png" alt="Encryptor">
-       <p>TaskAssign</p>
-       <div class="links">
-       <a onclick="Dialog(1)">View</a>
-       <a href="https://github.com/axeljm0/TaskAssign">Repo</a>
-    </div>
-    <div class="technologies">
-      <span id="tech">
-        <img src="img/React-icon.svg" alt="">
-        <img src="img/Tailwind_CSS_Logo.svg.png" alt="">
-        <img src="img/Python.png" alt="">
-        <img src="img/FastAPI.png" alt="">
-        <img src="img/mongodb_plain_logo_icon_146422.png" alt="">
-      </span>
-
-      <style>
-        #tech {
-          margin-left: 0.1px;
-        }
-      </style>
-    </div>
-  </div>
-
-  <div class="project">
-    <img src="Assets/AXELFLIX.png" alt="JS GAME">
-    <p>AXELFLIX</p>
-    <div class="links">
-    <a onclick="Dialog(2)">View</a>
-    <a href="https://github.com/axeljm0/AXELFLIX">Repo</a>
- </div>
- <div class="technologies" style="margin-left: 20%;">
-  <span>
-    <img src="img/html copy.png" alt="">
-    <img src="img/Tailwind_CSS_Logo.svg.png" alt="">
-    <img src="img/JavaScript-logo.png" alt="">
-    <img src="img/java-logo-1.png" alt="">
-    <img src="img/Spring.png" alt="">
-  </span>
-</div>
-</div>
-
-<div class="project">
-  <img src="img/linksy.png  " alt="Linksy">
-  <p>Linksy</p>
-  <div class="links">
-  <a onclick="Dialog(3)">View</a>
-  <a href="https://github.com/axeljm0/Linksy">Repo</a>
-</div>
-<div class="technologies">
-  <span>
-    <img src="img/html copy.png" alt="">
-    <img src="img/CSS copy.png" alt="">
-    <img src="img/JavaScript-logo.png" alt="">
-    <img src="img/cordoba.png" alt="">
-  </span>
-</div>
-</div>
-</div>
-
-<div class="project">
-  <img src="img/Login  - copia.png" alt="JS GAME">
-  <p>AXEGA</p>
-  <div class="links">
-  <a onclick="Dialog(4)">View</a>
-  <a href="https://github.com/axeljm0/axegafit">Repo</a>
-  </div>
-  <div class="technologies" style="margin-left: 80px;">
-    <span>
-      <img src="img/html copy.png" alt="">
-      <img src="img/CSS copy.png" alt="">
-      <img src="img/JavaScript-logo.png" alt="">
-      <img src="img/Python.png" alt="">
-      <img src="img/django.png" alt="">
-    </span>
-  </div>
   <style>
-    .technologies {
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary-color: #00ff88;
+      --secondary-color: #0066cc;
+      --accent-color: #ff4444;
+      --dark-bg: #0a0a0a;
+      --card-bg: #1a1a1a;
+      --text-primary: #ffffff;
+      --text-secondary: #cccccc;
+      --gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--dark-bg);
+      color: var(--text-primary);
+      overflow-x: hidden;
+    }
+
+    /* Animated Background */
+    .bg-animation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      background: linear-gradient(45deg, #0a0a0a 0%, #1a0033 50%, #0a0a0a 100%);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+    }
+
+    .bg-animation::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="1" fill="%2300ff88" opacity="0.3"/></svg>');
+      animation: float 20s linear infinite;
+    }
+
+    @keyframes gradientShift {
+
+      0%,
+      100% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0px) translateX(0px);
+      }
+
+      33% {
+        transform: translateY(-20px) translateX(10px);
+      }
+
+      66% {
+        transform: translateY(5px) translateX(-15px);
+      }
+
+      100% {
+        transform: translateY(0px) translateX(0px);
+      }
+    }
+
+    /* Navigation */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(10, 10, 10, 0.95);
+      backdrop-filter: blur(20px);
+      z-index: 1000;
+      padding: 1rem 2rem;
+      transition: all 0.3s ease;
+    }
+
+    .navbar.scrolled {
+      background: rgba(10, 10, 10, 0.98);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-container {
       display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .nav-logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-link {
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      position: relative;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+    }
+
+    .nav-link:hover {
+      color: var(--primary-color);
+      background: rgba(0, 255, 136, 0.1);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--primary-color);
+      transition: all 0.3s ease;
+      transform: translateX(-50%);
+    }
+
+    .nav-link:hover::after {
+      width: 80%;
+    }
+
+    /* Hero Section */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 2rem;
+      position: relative;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      animation: fadeInUp 1s ease-out;
+      margin-left: -300px;
+    }
+
+    .hero-greeting {
+      font-size: 1.2rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      opacity: 0.9;
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 8vw, 5rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #ffffff, #cccccc, var(--primary-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.1;
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: var(--dark-bg);
+      box-shadow: 0 4px 20px rgba(0, 255, 136, 0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0, 255, 136, 0.4);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text-primary);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--primary-color);
+    }
+
+    /* Profile Image */
+    .hero-image {
+      position: absolute;
+      top: 50%;
+      right: 10%;
+      transform: translateY(-50%);
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: var(--gradient);
+      padding: 4px;
+      animation: pulse 4s ease-in-out infinite;
+    }
+
+    .hero-image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+      }
+
+      50% {
+        box-shadow: 0 0 50px rgba(0, 255, 136, 0.6);
+      }
+    }
+
+    /* Social Links */
+    .social-links {
+      position: fixed;
+      left: 2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      z-index: 100;
+    }
+
+    .social-link {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .social-link:hover {
+      background: var(--primary-color);
+      color: var(--dark-bg);
+      transform: translateX(10px);
+    }
+
+    /* Sections */
+    .section {
+      padding: 100px 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 3rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 3rem;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* About Section */
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--text-secondary);
+    }
+
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    .stat-card {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 15px;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--primary-color);
+      box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--primary-color);
+    }
+
+    .stat-label {
+      color: var(--text-secondary);
+      margin-top: 0.5rem;
+    }
+
+    /* Skills Section */
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+      padding: 2rem;
+    }
+
+    .skill-card {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 1;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin-bottom: -150px;
     }
-    .project span img {
-      width: 30px;
-      height: 30px;
-      margin: 5px;
-      border: none;
-      float: left;
-      border: #2b3c77 solid;
+
+    .skill-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.1), transparent);
+      transition: left 0.5s ease;
+    }
+
+    .skill-card:hover::before {
+      left: 100%;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-10px) scale(1.05);
+      border-color: var(--primary-color);
+      box-shadow: 0 15px 40px rgba(0, 255, 136, 0.3);
+    }
+
+    .skill-icon {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 0.5rem;
       display: flex;
-      gap: 20px; /* Espacio entre íconos */
-      padding: 0 0 0 0; /* Solo padding arriba */
-    }
-
-    .project span img:hover {
-      transform: scale(1.5);
-      transition: 0.3s;
-    }
-
-    .project span {
-      justify-content: flex-start;
       align-items: center;
-      padding: 0%;
-      margin-left: -162px;
+      justify-content: center;
+      font-size: 2rem;
+      border-radius: 8px;
+    }
+
+    .skill-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: brightness(1.2);
+    }
+
+    .skill-name {
+      font-weight: 600;
+      color: var(--text-primary);
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+    }
+
+    /* Projects Section */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-image {
+      width: 100%;
+      height: 200px;
+      background: var(--gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      color: white;
+      position: relative;
+    }
+
+    .project-content {
+      padding: 2rem;
+    }
+
+    .project-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .project-description {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .tech-tag {
+      background: rgba(0, 255, 136, 0.2);
+      color: var(--primary-color);
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    /* Contact Section */
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-info {
+      space-y: 2rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--primary-color);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--dark-bg);
+    }
+
+    .contact-form {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 12px 16px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      color: var(--text-primary);
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: var(--primary-color);
+      box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+    }
+
+    .form-textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    /* Scroll Animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
+
+      .hero-image {
+        position: static;
+        transform: none;
+        width: 200px;
+        height: 200px;
+        margin: 2rem auto 0;
+      }
+
+      .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .social-links {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        margin: 2rem 0;
+        transform: none;
+      }
+
+      .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 1rem;
+      }
+
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--dark-bg);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--primary-color);
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--secondary-color);
     }
   </style>
-</div>
+</head>
 
-<div  class="project">
-  <img src="img/Cuenta.png">
-  <p>AXEL BANK</p>
-  <div class="links">
-  <a onclick="Dialog(5)">View</a>
-  <a href="https://github.com/axeljm0/Conversor-divisas">Repo</a>
-</div>
-<div class="technologies">
-<span>
-  <img src="img/java-logo-1.png"  style="margin-left: -70px;">
-</span>
-</div>
-</div>
+<body>
+  <div class="bg-animation"></div>
 
-<div class="project">
-  <img src="img/pong.png" alt="JS GAME">
-  <p>Pong game</p>
-  <div class="links">
-  <a onclick="Dialog(6)">View</a>
-  <a href="https://github.com/axeljm0/Pong-game">Repo</a>
-</div>
-<div class="technologies">
-  <span>
-    <img src="img/html copy.png" alt="">
-    <img src="img/CSS copy.png" alt="">
-    <img src="img/JavaScript-logo.png" alt="">
-  </span>
-</div>
-</div>
-</div>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">AJM</div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Inicio</a></li>
+        <li><a href="#about" class="nav-link">Sobre mí</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Proyectos</a></li>
+        <li><a href="#contact" class="nav-link">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <div class="project">
-        <img src="img/jsgame.png" alt="JS GAME">
-        <p>Secret number game</p>
-        <div class="links">
-        <a onclick="Dialog(7)">View</a>
-        <a href="https://github.com/axeljm0/Adivina-el-numero-secreto">Repo</a>
-     </div>
-       <div class="technologies">
-    <span>
-      <img src="img/html copy.png" alt="">
-      <img src="img/CSS copy.png" alt="">
-      <img src="img/JavaScript-logo.png" alt="">
-    </span>
+  <!-- Social Links -->
+  <div class="social-links">
+    <a href="https://github.com/axeljm0" class="social-link" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/axel-jim%C3%A9nez-martich-b403a3267/" class="social-link" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://www.instagram.com/axel_jimenez16/" class="social-link" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
   </div>
-</div>
 
-
-<div class="project">
-  <img src="img/barberíá.png">
-   <p>Barbershop</p>
-    <div class="links">
-    <a onclick="Dialog(8)">View</a>
-    <a href="https://github.com/axeljm0/Barbershop">Repo</a>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-greeting">👋 Hola, soy</div>
+      <h1 class="hero-title">Axel Jiménez Martich</h1>
+      <p class="hero-subtitle">Full Stack Developer & Tech Enthusiast</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-code"></i>
+          Ver Proyectos
+        </a>
+        <a href="pdf/cv.pdf" class="btn btn-secondary" target="_blank">
+          <i class="fas fa-download"></i>
+          Descargar CV
+        </a>
+      </div>
     </div>
-    <div class="technologies">
-      <span>
-        <img src="img/html copy.png" alt="">
-        <img src="img/CSS copy.png" alt="">
-      </span>
+    <div class="hero-image">
+      <img src="./Assets/foto.png"
+        style="width: 100%; height: 100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 4rem; color: white;">
+      <i class="fas fa-user"></i>
+      </img>
     </div>
-</div>
-
-</main>
-</section>
-
-    <button id="boton3" onclick="window.location.href='pdf/cv.pdf'">Download CV</button>
-
   </section>
 
-  <section class="references">
+  <!-- About Section -->
+  <section id="about" class="section reveal">
+    <h2 class="section-title">Sobre mí</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>Soy un desarrollador Full Stack apasionado por la tecnología y todo lo relacionado con las ciencias de la
+          computación. Me especializo en desarrollo backend con sólidos conocimientos en ciberseguridad y DevOps.</p>
+        <br>
+        <p>Mi objetivo es crear soluciones innovadoras y eficientes que marquen la diferencia. Siempre estoy aprendiendo
+          nuevas tecnologías y mejorando mis habilidades para mantenerme al día con las últimas tendencias del
+          desarrollo web.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Tecnologías</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">9+</div>
+          <div class="stat-label">Proyectos</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">2+</div>
+          <div class="stat-label">Años Experiencia</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Dedicación</div>
+        </div>
+      </div>
+    </div>
   </section>
 
-<Section id="textme" style="margin-top: 20%;">
-  <H1 id="Hablemos" style="color: #ffff; text-align: center; font-size: 80px; margin-bottom: 5%; font-family:Verdana,Tahoma, sans-serif;font-weight: bold;"> Send me a message!</H1>
-  <header id="hablemos-text">You can send me anything, I'd even be happy to work on your next idea.
-  </header>
-  <div class="wrapper">
-    
-    <form id="form" >
-        <div class="field email">
-            <div class="input-area">
-                <input type="text" name="nombre" placeholder="Tu Nombre">
-                <input type="text"  name="correo" style="margin-top: 10px; 
-                margin-bottom: 10px;" placeholder="Tu coreo">
-                <i class="icon fas fa-envelope"></i>
-                <i class="error error-icon fas fa-exclamation-circle"></i>
-            </div>
-            <div class="error error-txt">Email not found</div>
+  <!-- Skills Section -->
+  <section id="skills" class="section reveal">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-container">
+      <!-- Programming Languages -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
         </div>
-        <div class="field password">
-            <div class="input-area">
-                <input type="text" name="texto" style="margin-top: 90px; padding-bottom: 30%;">
-                <i class="icon fas fa-lock"></i>
-                <i class="error error-icon fas fa-exclamation-circle"></i>
-            </div>
+        <div class="skill-name">C#</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt=".NET">
         </div>
-        <input type="submit" value="Enviar">
-    </form>
+        <div class="skill-name">.NET</div>
+      </div>
 
-    <dialog id="mensajeDialogo">
-      <img src="img/submit copy.png" alt="">
-      <p>message sent successfully!</p>
-      <button id="cerrarDialogo">Close</button>
-    </dialog>
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+        </div>
+        <div class="skill-name">Java</div>
+      </div>
 
-    <style>
-      dialog {
-        padding: 40px;
-        border-radius: 10px;
-        border: none;
-        position: fixed;
-        z-index: 10;
-        margin-top: 5%;
-        margin-left: 35%;
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="Spring">
+        </div>
+        <div class="skill-name">Spring</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        </div>
+        <div class="skill-name">Python</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+        </div>
+        <div class="skill-name">Django</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" alt="FastAPI">
+        </div>
+        <div class="skill-name">FastAPI</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" alt="Ruby">
+        </div>
+        <div class="skill-name">Ruby</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+        </div>
+        <div class="skill-name">PHP</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="Laravel">
+        </div>
+        <div class="skill-name">Laravel</div>
+      </div>
+
+      <!-- Databases -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+        </div>
+        <div class="skill-name">MongoDB</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+        </div>
+        <div class="skill-name">MySQL</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite">
+        </div>
+        <div class="skill-name">SQLite</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+            alt="PostgreSQL">
+        </div>
+        <div class="skill-name">PostgreSQL</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+            alt="SQL Server">
+        </div>
+        <div class="skill-name">SQL Server</div>
+      </div>
+
+      <!-- Web Technologies -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        </div>
+        <div class="skill-name">HTML5</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+        </div>
+        <div class="skill-name">CSS3</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+            alt="Tailwind CSS">
+        </div>
+        <div class="skill-name">Tailwind CSS</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript">
+        </div>
+        <div class="skill-name">JavaScript</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+        </div>
+        <div class="skill-name">Node.js</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express">
+        </div>
+        <div class="skill-name">Express</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        </div>
+        <div class="skill-name">React</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" alt="Electron">
+        </div>
+        <div class="skill-name">Electron</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js">
+        </div>
+        <div class="skill-name">Vue.js</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" alt="Vite">
+        </div>
+        <div class="skill-name">Vite</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
+        </div>
+        <div class="skill-name">Angular</div>
+      </div>
+
+      <!-- Mobile Development -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart">
+        </div>
+        <div class="skill-name">Dart</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg" alt="Swift">
+        </div>
+        <div class="skill-name">Swift</div>
+      </div>
+
+      <!-- Tools -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="NPM">
+        </div>
+        <div class="skill-name">NPM</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+        </div>
+        <div class="skill-name">Docker</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
+            alt="WordPress">
+        </div>
+        <div class="skill-name">WordPress</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle Cloud">
+        </div>
+        <div class="skill-name">Oracle Cloud</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
+            alt="AWS">
+        </div>
+        <div class="skill-name">AWS</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
+        </div>
+        <div class="skill-name">Azure</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+        </div>
+        <div class="skill-name">Linux</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+        </div>
+        <div class="skill-name">Git</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Terminal">
+        </div>
+        <div class="skill-name">Terminal</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+        </div>
+        <div class="skill-name">Figma</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" alt="Trello">
+        </div>
+        <div class="skill-name">Trello</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" alt="Notion">
+        </div>
+        <div class="skill-name">Notion</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva">
+        </div>
+        <div class="skill-name">Canva</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+            alt="Visual Studio">
+        </div>
+        <div class="skill-name">Visual Studio</div>
+      </div>
+
+      <!-- APIs & Testing -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-plug" style="color: #ff6c37;"></i>
+        </div>
+        <div class="skill-name">Postman</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-moon" style="color: #4000bf;"></i>
+        </div>
+        <div class="skill-name">Insomnia</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-cogs" style="color: #85ea2d;"></i>
+        </div>
+        <div class="skill-name">Swagger</div>
+      </div>
+
+      <!-- Office & Productivity -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-file-excel" style="color: #217346;"></i>
+        </div>
+        <div class="skill-name">Office</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-chart-bar" style="color: #f2c811;"></i>
+        </div>
+        <div class="skill-name">Power BI</div>
+      </div>
+
+      <!-- Virtualization -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-cube" style="color: #183a61;"></i>
+        </div>
+        <div class="skill-name">VirtualBox</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fas fa-desktop" style="color: #607078;"></i>
+        </div>
+        <div class="skill-name">VMware</div>
+      </div>
+
+      <!-- Additional Technologies -->
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blazor/blazor-original.svg" alt="Blazor">
+        </div>
+        <div class="skill-name">Blazor</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg" alt="Composer">
+        </div>
+        <div class="skill-name">Composer</div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon">
+          <i class="fab fa-microsoft" style="color: #00bcf2;"></i>
+        </div>
+        <div class="skill-name">Dynamics</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section reveal">
+    <h2 class="section-title">Proyectos Destacados</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-image">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">MiTienda</h3>
+          <p class="project-description">Plataforma de e-commerce completa con carrito de compras, gestión de usuarios y
+            panel administrativo.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag">MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/axeljm0/ecomerce-project" class="btn btn-secondary" target="_blank">
+              <i class="fab fa-github"></i> Código
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <i class="fas fa-tasks"></i>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">TaskAssign</h3>
+          <p class="project-description">Aplicación de gestión de tareas con asignación de usuarios, notificaciones y
+            seguimiento de progreso.</p>
+          <div class="project-tech">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">Tailwind</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/axeljm0/TaskAssign" class="btn btn-secondary" target="_blank">
+              <i class="fab fa-github"></i> Código
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <i class="fas fa-film"></i>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">AXELFLIX</h3>
+          <p class="project-description">Plataforma de streaming similar a Netflix con catálogo de películas, búsqueda
+            avanzada y recomendaciones.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">Spring</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">Tailwind</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/axeljm0/AXELFLIX" class="btn btn-secondary" target="_blank">
+              <i class="fab fa-github"></i> Código
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <i class="fas fa-dumbbell"></i>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">AXEGA Fitness</h3>
+          <p class="project-description">Aplicación web para gimnasio con gestión de miembros, planes de entrenamiento y
+            seguimiento de progreso.</p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/axeljm0/axegafit" class="btn btn-secondary" target="_blank">
+              <i class="fab fa-github"></i> Código
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <i class="fas fa-gamepad"></i>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Pong Game</h3>
+          <p class="project-description">Recreación del clásico juego Pong con controles fluidos, efectos visuales y
+            sistema de puntuación.</p>
+          <div class="project-tech">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">HTML5 Canvas</span>
+            <span class="tech-tag">CSS3</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/axeljm0/Pong-game" class="btn btn-secondary" target="_blank">
+              <i class="fab fa-github"></i> Código
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <i class="fas fa-question-circle"></i>
+        </div>
+        <div class="project-content">
+          <h3 class="project-title">Secret Number Game</h3>
+          <p class="project-description">Juego interactivo de adivinanza de números con diferentes niveles de dificultad
+            y sistema de pistas.</p>
+          <div class="project-tech">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/axeljm0/Adivina-el-numero-secreto" class="btn btn-secondary" target="_blank">
+              <i class="fab fa-github"></i> Código
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section reveal">
+    <h2 class="section-title">¡Trabajemos Juntos!</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3 style="font-size: 2rem; margin-bottom: 2rem; color: var(--primary-color);">Envíame un mensaje</h3>
+        <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 1.6; margin-bottom: 3rem;">
+          ¿Tienes un proyecto en mente? ¿Quieres colaborar en algo increíble? No dudes en contactarme.
+          Estoy siempre abierto a nuevas oportunidades y desafíos emocionantes.
+        </p>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+            <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Email</h4>
+            <p style="color: var(--text-secondary);">axel.jimenez@email.com</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div>
+            <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Ubicación</h4>
+            <p style="color: var(--text-secondary);">República Dominicana</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div>
+            <h4 style="color: var(--text-primary); margin-bottom: 0.5rem;">Disponibilidad</h4>
+            <p style="color: var(--text-secondary);">Lun - Vie: 9:00 AM - 6:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" id="name" name="name" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label for="subject" class="form-label">Asunto</label>
+          <input type="text" id="subject" name="subject" class="form-input" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea id="message" name="message" class="form-input form-textarea" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">
+          <i class="fas fa-paper-plane"></i>
+          Enviar Mensaje
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer
+    style="background: var(--card-bg); padding: 3rem 2rem 1rem; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+    <div style="max-width: 1200px; margin: 0 auto;">
+      <div style="display: flex; justify-content: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap;">
+        <a href="https://github.com/axeljm0" class="social-link" target="_blank"
+          style="position: static; transform: none;">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/axel-jim%C3%A9nez-martich-b403a3267/" class="social-link" target="_blank"
+          style="position: static; transform: none;">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/axel_jimenez16/" class="social-link" target="_blank"
+          style="position: static; transform: none;">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <p style="color: var(--text-secondary); margin: 0;">
+        © 2024 Axel Jiménez Martich. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Success Modal -->
+  <div id="successModal"
+    style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 10000; justify-content: center; align-items: center;">
+    <div
+      style="background: var(--card-bg); padding: 2rem; border-radius: 20px; text-align: center; max-width: 400px; border: 1px solid rgba(255, 255, 255, 0.1);">
+      <div style="color: var(--primary-color); font-size: 3rem; margin-bottom: 1rem;">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <h3 style="color: var(--text-primary); margin-bottom: 1rem;">¡Mensaje Enviado!</h3>
+      <p style="color: var(--text-secondary); margin-bottom: 2rem;">Tu mensaje ha sido enviado exitosamente. Te
+        responderé lo antes posible.</p>
+      <button onclick="closeModal()" class="btn btn-primary">
+        <i class="fas fa-times"></i>
+        Cerrar
+      </button>
+    </div>
+  </div>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Navbar background on scroll
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
       }
+    });
 
-      dialog p {
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: 30px;
+    // Reveal animations
+    function revealElements() {
+      const reveals = document.querySelectorAll('.reveal');
+      const windowHeight = window.innerHeight;
+
+      reveals.forEach(reveal => {
+        const elementTop = reveal.getBoundingClientRect().top;
+        const elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveal.classList.add('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealElements);
+    revealElements(); // Initial check
+
+    // Contact form handling
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Simulate form submission
+      setTimeout(() => {
+        document.getElementById('successModal').style.display = 'flex';
+        this.reset();
+      }, 1000);
+    });
+
+    function closeModal() {
+      document.getElementById('successModal').style.display = 'none';
+    }
+
+    // Close modal when clicking outside
+    document.getElementById('successModal').addEventListener('click', function (e) {
+      if (e.target === this) {
+        closeModal();
       }
+    });
 
-      dialog button {
-        background-color: #1f1d1d;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-      }
+    // Typing effect for hero title
+    function typeWriter(element, text, speed = 100) {
+      let i = 0;
+      element.innerHTML = '';
 
-      dialog button:hover {
-        background-color: #0e5604;
-      }
-
-      @media (max-width: 1000px) {
-        dialog {
-          margin-top: 50%;
+      function type() {
+        if (i < text.length) {
+          element.innerHTML += text.charAt(i);
+          i++;
+          setTimeout(type, speed);
         }
       }
-    </style>
-  
-</div>
-</Section>
-  
-<!-- Olas -->
-      <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="green" fill-opacity="0.3" d="M0,192L60,181.3C120,171,240,149,360,165.3C480,181,600,235,720,229.3C840,224,960,160,1080,144C1200,128,1320,160,1380,176L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-      <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="green" fill-opacity="0.3" d="M0,128L120,112C240,96,480,64,720,85.3C960,107,1200,181,1320,218.7L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
-      <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1f1d1d" fill-opacity="1" d="M0,256L80,229.3C160,203,320,149,480,149.3C640,149,800,203,960,218.7C1120,235,1280,213,1360,202.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-  
- <footer id="pie-pagina">
-        <div class="pie-pagina-enlaces">
-             <a href="https://github.com/axeljm0?tab=repositories"><img id="social-1" src="img/Github.svg"></a> 
-             <a href="https://www.linkedin.com/in/axel-jim%C3%A9nez-martich-b403a3267/"><img id="social-2" src="img/LinkedIn.svg"></a>   
-             <a href="https://www.instagram.com/axel_jimenez16/"> <img src="img/insta.png" alt="" id="social-2"></a>
-        </div>
-             <div class="pie-span">
-          <span> Copyright © Axel Jiménez Mertich 2024  </span>
-      </div>
-</footer>
+
+      type();
+    }
+
+    // Initialize typing effect when page loads
+    window.addEventListener('load', () => {
+      const heroTitle = document.querySelector('.hero-title');
+      if (heroTitle) {
+        const originalText = heroTitle.textContent;
+        typeWriter(heroTitle, originalText, 150);
+      }
+    });
+
+    // Parallax effect for hero section
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const hero = document.querySelector('.hero');
+      if (hero) {
+        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+      }
+    });
+
+    // Skills animation on scroll
+    const skillCards = document.querySelectorAll('.skill-card');
+    const animateSkills = () => {
+      skillCards.forEach((card, index) => {
+        const cardTop = card.getBoundingClientRect().top;
+        if (cardTop < window.innerHeight - 100) {
+          setTimeout(() => {
+            card.style.transform = 'translateY(0) scale(1)';
+            card.style.opacity = '1';
+          }, index * 100);
+        }
+      });
+    };
+
+    // Set initial state for skills
+    skillCards.forEach(card => {
+      card.style.transform = 'translateY(30px) scale(0.9)';
+      card.style.opacity = '0';
+      card.style.transition = 'all 0.6s ease';
+    });
+
+    window.addEventListener('scroll', animateSkills);
+
+    // Project cards hover effect
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('mouseenter', function () {
+        this.style.transform = 'translateY(-10px) scale(1.02)';
+      });
+
+      card.addEventListener('mouseleave', function () {
+        this.style.transform = 'translateY(0) scale(1)';
+      });
+    });
+
+    // Add loading animation
+    window.addEventListener('load', () => {
+      document.body.style.opacity = '0';
+      document.body.style.transition = 'opacity 0.5s ease';
+
+      setTimeout(() => {
+        document.body.style.opacity = '1';
+      }, 100);
+    });
+  </script>
 </body>
 
-  <!-- React y ReactDOM desde CDN -->
-  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-
-  <!-- Babel -->
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-
-<script src="effects/effects.js"></script>
-<script src="Components/index.js"></script>
 </html>
-
-
